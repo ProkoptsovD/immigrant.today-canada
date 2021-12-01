@@ -1,0 +1,18 @@
+:root {
+  --accent-color: #e55241;
+  --headlines-color: #1e222e;
+  --text-color-primary: #3a3e48;
+  --text-color-secondary: #f7f7f7;
+  --price-color: #afb2c4;
+  --bg-sections-color: #f7f7f7;
+  --bg-footer-primary: #272727;
+  --bg-footer-secondary: #202020;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+}
