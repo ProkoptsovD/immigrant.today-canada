@@ -1,0 +1,43 @@
+//=========================BUTTON desktop========================//
+%button {
+  display: inline-block;
+  padding: 20px 50px;
+
+  font-family: inherit;
+  @include font-preset(700, 18px, 24px);
+
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+
+  background-color: getColor(accent);
+  color: getColor(text-alternative);
+}
+
+%button-inverse {
+  display: inline-block;
+  padding: 20px 50px;
+
+  font-family: inherit;
+  @include font-preset(700, 18px, 24px);
+  text-align: center;
+
+  border: 1px solid getColor(accent);
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: getColor(accent);
+}
+
+//=================BUTTON mobile===================//
+%button-mobile {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  padding: 4px;
+  margin: 0;
+
+  border: transparent;
+  border-radius: 4px;
+}

@@ -1,0 +1,55 @@
+.header {
+  box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.25);
+}
+.header__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: none;
+}
+
+.navbar__catalogue {
+  display: none;
+}
+
+.header__btn {
+  display: none;
+}
+//================mobile buttons styles======================//
+.menu-mobile-btn {
+  @extend %button-mobile;
+  background-color: getColor(accent);
+
+  &__icon-cross {
+    display: none;
+
+    .menu-mobile-btn.is-opened & {
+      display: block;
+    }
+  }
+}
+
+.menu-mobile-btn.is-opened .menu-mobile-btn__icon-menu {
+  display: none;
+}
+
+.search-btn {
+  @extend %button-mobile;
+  margin-right: 15px;
+  background-color: getColor(bg-btn-mobile);
+
+  &__icon {
+    fill: getColor(accent);
+  }
+}
+
+.auth-btn {
+  @extend %button-mobile;
+  background-color: getColor(bg-btn-mobile);
+
+  &__icon {
+    fill: getColor(accent);
+  }
+}

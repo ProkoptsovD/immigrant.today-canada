@@ -12,9 +12,14 @@ $colors: (
   //color used for prices
   "bg-sections-color": #f7f7f7,
   //background color for sections
+  "bg-hero": #f4f4f4,
+  //used in hero section
   "bg-footer-primary": #272727,
   //primary background color in footer
-  "bg-footer-secondary": #202020 // secondary backround color in footer,,,
+  "bg-footer-secondary": #202020,
+  // secondary backround color in footer
+  "bg-btn-mobile": rgba(229, 82, 65, 0.1)
+    //color is used for buttons in header mobile,,,
 );
 
 //=================TRANSITION AND MARGINS================//

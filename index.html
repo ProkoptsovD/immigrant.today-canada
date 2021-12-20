@@ -6,105 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Immigrant.Today | Ваш путь в Канаду</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/"
+    <link rel="stylesheet" href="./sass/main.css"
 </head>
 <body>
     <header class="header">
-        <div class="menu__tab">
-            <ul class="menu__list">
-                <li class="menu__element">
-                    <a class="header__link" href="#">О проекте</a>
-                </li>
-
-                <li class="menu__element">
-                    <a class="header__link" href="#">Вакансии</a>
-                </li>
-
-                <li class="menu__element">
-                    <a class="header__link" href="#">Контакты</a>
-                </li>
-            </ul>
-
-            <ul class="menu__auth">
-                <li class="menu__element">Погода</li>
-                <li class="menu__element">Язык</li>
-                <li class="menu__element">Мой аккаунт</li>
-            </ul>
-        </div>
-
-        <div>
-            <a class="header__logo" href="#">
-                <img src="/" alt="Логотип компании Immigrant.Today">
-            </a>
-
-            <nav class="navbar">
-                <ul class="navbar__catalog">
-                    <li class="nav__element">
-                        <a class="navbar__link" href="#">Иммиграция</a>
+        <div class="container header__container">
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__element">
+                        <a class="header__link" href="#">О проекте</a>
                     </li>
-                
-                    <li class="nav__element">
-                        <a class="navbar__link" href="#">Учеба</a>
+            
+                    <li class="menu__element">
+                        <a class="header__link" href="#">Вакансии</a>
                     </li>
-                
-                    <li class="nav__element">
-                        <a class="navbar__link" href="#">Работа</a>
-                    </li>
-                
-                    <li class="nav__element">
-                        <a class="navbar__link" href="#">Визы</a>
-                    </li>
-                
-                    <li class="nav__element">
-                        <a class="navbar__link" href="#">Услуги и курсы</a>
-                    </li>
-                
-                    <li class="nav__element">
-                        <a class="navbar__link" href="#">Блог</a>
+            
+                    <li class="menu__element">
+                        <a class="header__link" href="#">Контакты</a>
                     </li>
                 </ul>
+            
+                <ul class="menu__auth">
+                    <li class="menu__element">Погода</li>
+                    <li class="menu__element">Язык</li>
+                    <li class="menu__element">Мой аккаунт</li>
+                </ul>
+            </div>
+            
+            <div class="header__mobile">
+                <button class="menu-mobile-btn" type="button" aria-label="Открыть мобильное меню">
+                    <svg class="menu-mobile-btn__icons" width="32px" height="32px">
+                
+                        <use class="menu-mobile-btn__icon-menu" href="./images/icons.svg#icon-menu-mobile"></use>
+                        <use class="menu-mobile-btn__icon-cross" href="./images/icons.svg#icon-menu-mobile-cross"></use>
+                    </svg>
+                </button>
+                
+                <a class="header__logo" href="#">
+                    <img src="./images/logo.svg" alt="Логотип компании Immigrant.Today">
+                </a>
+            
+                <nav class="navbar">
+                    <ul class="navbar__catalogue">
+                        <li class="nav__element">
+                            <a class="navbar__link" href="#">Иммиграция</a>
+                        </li>
+            
+                        <li class="nav__element">
+                            <a class="navbar__link" href="#">Учеба</a>
+                        </li>
+            
+                        <li class="nav__element">
+                            <a class="navbar__link" href="#">Работа</a>
+                        </li>
+            
+                        <li class="nav__element">
+                            <a class="navbar__link" href="#">Визы</a>
+                        </li>
+            
+                        <li class="nav__element">
+                            <a class="navbar__link" href="#">Услуги и курсы</a>
+                        </li>
+            
+                        <li class="nav__element">
+                            <a class="navbar__link" href="#">Блог</a>
+                        </li>
+                    </ul>
+            
+                    <button class="search-btn"
+                            type="button"
+                            aria-label="Поиск по сайту">
 
-                <div class="header__search">
-                    <p>Поиск</p>
-                </div>
+                        <svg class="search-btn__icon"
+                            width="20px"
+                            height="20px">
+                            <use href="./images/icons.svg#icon-loupe"></use>
+                        </svg>
+                    </button>
 
-                <button class="header__btn">Оценить шансы</button>
-            </nav>
+                    <button class="auth-btn"
+                            type="button"
+                            aria-label="Авторизоваться на сайте">
+
+                        <svg class="auth-btn__icon"
+                            width="20px"
+                            height="20px">
+                            <use href="./images/icons.svg#icon-user"></use>
+                        </svg>
+                    </button>
+                   
+            
+                    <button class="header__btn">Оценить шансы</button>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero__wrapper">
+            <div class="container hero__container">
                 <div class="offer">
-                    <h1>Помощь в иммиграции, визах и адаптации в Канаде</h1>
+                    <h1 class="hero__heading">Помощь в иммиграции, визах<br /> и адаптации в Канаде</h1>
                     
-                    <ul>
-                        <li>Квалифированный штат сотрудников</li>
-                        <li>Комплексное сопровождение</li>
-                        <li>Лицензия на оказание иммиграционных услуг</li>
+                    <ul class="hero__pros">
+                        <li class="hero__pros-item">
+                            Квалифированный штат сотрудников
+                        </li>
+                        <li class="hero__pros-item">
+                            Комплексное сопровождение
+                        </li>
+                        <li class="hero__pros-item">
+                            Лицензия на оказание иммиграционных услуг
+                        </li>
                     </ul>
-                    
-                    <button class="offer__btn">Подробнее</button>
-                    <button class="offer__btn">Задать вопрос</button>
                 </div>
+           
+                    <div class="offer__wrapper">
+                                <button class="more-details-btn" type="button" aria-label="Подробнее об услугах">
+                                    Подробнее
+                                </button>
+                                
+                                <button class="ask-question-btn" type="button" aria-label="Задать вопрос">
+                                    Задать вопрос
+                                </button>
+                    </div>
+            </div>
 
-                <div class="hero__bcg">
-                    <img class="hero__img" src="/" alt="Молодая девушка с паспортом в руках улыбается">
-
-                    <svg class="hero__svg">
-                        <use href=""></use>
-                    </svg>
-
-                    <svg class="hero__svg">
-                        <use href=""></use>
-                    </svg>
-                </div>
+            <div class="hero__bg">
             </div>
         </section>
 
         <section class="popular">
-            <div class="popular__wrapper">
+            <div class="container">
                 <h2 class="popular__headline">Популярные предложения</h2>
                 <button class="popular__btn">Смотреть все</button>
             </div>
@@ -178,7 +211,7 @@
         </section>
 
         <section class="immigration">
-            <div class="immigration__wrapper">
+            <div class="container">
                 <h2 class="immigration__headline">Иммиграция</h2>
                 <button class="immigration__btn">Смотреть все</button>
             </div>
@@ -224,7 +257,7 @@
         </section>
 
         <aside class="aside">
-            <div class="aside__wrapper">
+            <div class="container">
                 <h3 class="aside__headline">С чего начать</h3>
         
                 <div class="aside__card">
@@ -312,7 +345,7 @@
         </aside>
 
         <section class="study">
-            <div class="study__wrapper">
+            <div class="container">
                 <h2 class="study__headline">Учеба</h2>
                 <button class="study__btn">Смотреть все</button>
             </div>
@@ -357,7 +390,7 @@
         </section>
 
         <section class="job">
-            <div class="job__wrapper">
+            <div class="container">
                 <h2 class="job__headline">Работа</h2>
                 <button class="job__btn">Смотреть все</button>
             </div>
@@ -402,7 +435,7 @@
         </section>
 
         <section class="visa">
-            <div class="visa__wrapper">
+            <div class="container">
                 <h2 class="visa__headline">Визы</h2>
                 <button class="visa__btn">Смотреть все</button>
             </div>
@@ -492,7 +525,7 @@
         </section> -->
 
         <aside class="aside">
-            <div class="aside__wrapper">
+            <div class="container">
                 <h3 class="aside__headline">Общее</h3>
             
                 <div class="aside__card">

@@ -1,2 +1,10 @@
 @import "./base/modern-normalize";
 @import "./base/default-styles-reset";
+@import "./base/variables";
+@import "./components/layouts/mixins";
+@import "./components/layouts/buttons";
+@import "./base/body";
+@import "./base/container";
+@import "./components/layouts/header";
+@import "./components/layouts/logo";
+@import "./components/hero-section";

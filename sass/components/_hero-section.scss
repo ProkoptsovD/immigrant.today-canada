@@ -1,0 +1,84 @@
+.hero {
+  background-color: getColor(bg-hero);
+
+  &__container {
+    padding-top: 30px;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+
+    @include font-preset(700, 20px, 36px);
+    color: getColor(headings);
+  }
+}
+
+.hero__pros-item {
+  display: flex;
+  margin-bottom: 15px;
+
+  @include font-preset(400, 15px, 24px);
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+
+    width: 24px;
+    height: 24px;
+
+    margin-right: 10px;
+
+    background-image: url("../images/maple-leaf.svg");
+  }
+}
+
+//==================HERO buttons============================//
+.offer__wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.more-details-btn {
+  @extend %button;
+  margin-right: 10px;
+}
+
+.ask-question-btn {
+  @extend %button-inverse;
+  margin-left: auto;
+}
+
+.ask-question-btn,
+.more-details-btn {
+  font-size: 14px;
+  line-height: lineHeight(14px, 20px);
+
+  @media screen and (max-width: 374px) {
+    display: flex;
+    flex-basis: calc(100% / 2 - 5px);
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  //   @media screen and (min-width: 375px) {
+  //     display: inline-block;
+
+  //     min-width: 165px;
+  //     min-height: 50px;
+  //   }
+}
+//========================HERO buttons end styles============//
+//========================HERO bg image styles===============//
+.hero__bg {
+  width: 100%;
+  min-height: 312px;
+  background-image: url("../images/hero-rectangle-dotted.svg"),
+    url("../images/hero-img.png"), url("../images/hero-rectangle.svg");
+  background-size: 62px 31px, contain, contain;
+  background-position: right 0 top 113px, bottom 0 right 32px, bottom 0 right 0;
+  background-repeat: no-repeat;
+}
