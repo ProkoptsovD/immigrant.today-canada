@@ -1,0 +1,52 @@
+//=====================COLORS MAP===========================//
+$colors: (
+  "accent": #e55241,
+  //main and accent color in website
+  "headings": #1e222e,
+  //mostly used color of headlines
+  "text-main": #3a3e48,
+  // mostly used color of text
+  "text-alternative": #f7f7f7,
+  // alternative color of text
+  "price-color": #afb2c4,
+  //color used for prices
+  "bg-sections-color": #f7f7f7,
+  //background color for sections
+  "bg-footer-primary": #272727,
+  //primary background color in footer
+  "bg-footer-secondary": #202020 // secondary backround color in footer,,,
+);
+
+//=================TRANSITION AND MARGINS================//
+$transitions: (
+  "speed": 250ms,
+  //is used for transitions while hovered and focused
+  "speed-alt": 500ms,
+  // aplies for scaling text in cards overlay
+  "speed-func": cubic-bezier(0.4, 0, 0.2, 1),
+  //is used for  transitions while hovered and focused
+);
+
+$grid-margin-item: 30px; // used in calc() for setting up margins between elements in flex grids
+
+//=====================FONTS=========================//
+
+$font-main: "Montserrat", sans-serif;
+$font-weight: 400;
+$font-size: 14px;
+$line-height: 20px;
+
+//=====================COLORS MAP FUNCTIONS==============//
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+//=====================TRANSITION FUNCTIONS==============//
+@function getTransition($key) {
+  @return map-get($transitions, $key);
+}
+
+//=====================FONTS FUNCTIONS==================//
+@function lineHeight($font-size, $line-height) {
+  @return ($line-height / $font-size);
+}
