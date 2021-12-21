@@ -1,0 +1,62 @@
+.popular {
+  padding: 72px 0 35px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    @include font-preset(700, 20px, 30px);
+    color: getColor(headings);
+  }
+  background-color: wheat;
+}
+
+.popular__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+  margin: 0;
+
+  border: transparent;
+  background-color: transparent;
+}
+
+.popular__btn-icon {
+  fill: getColor(accent);
+}
+
+//===================building grids=====================//
+.card {
+  @include grid() {
+    flex-wrap: nowrap;
+
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__element:not(:nth-child(-n + 2)) {
+    display: none;
+  }
+}
+
+//==================slider==========================//
+.slider {
+  width: 95px;
+  // height: 8px;
+  margin-left: auto;
+  margin-right: auto;
+
+  & > svg {
+    fill: getColor(accent);
+  }
+}

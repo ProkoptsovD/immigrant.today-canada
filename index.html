@@ -138,76 +138,116 @@
 
         <section class="popular">
             <div class="container">
-                <h2 class="popular__headline">Популярные предложения</h2>
-                <button class="popular__btn">Смотреть все</button>
+                <div class="popular__wrapper">
+                    <h2 class="popular__heading">Популярные предложения</h2>
+                    <button class="popular__btn">
+                        <svg class="popular__btn-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-more-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <article>
+                    <ul class="card">
+                        <li class="card__element">
+                            <img class="card__img" src="/" alt="Флаг канады на фоне неба и башни с часами ">
+                            <h3 class="card__title">Консультация по иммиграции или учебе</h3>
+                            <p class="card__text">Нужно больше информациио переезде в Канаду? Оцените свои шансы у лицензированного
+                                иммиграционного консультатнта!</p>
+                
+                            <div class="card__wrapper">
+                                <div class="card__meta">
+                                    <span class="card__price">5950 <span>&#8381;</span></span>
+                                    <span class="card__price"><span>&#36;</span>100 CAD</span>
+                                </div>
+                                <button class="card__btn">Подробнее</button>
+                            </div>
+                        </li>
+
+                        <li class="card__element">
+                            <img class="card__img" src="/" alt="Девушка работает за ноутбуком">
+                            <h3 class="card__title">Онлайн-изучение английского языка</h3>
+                            <p class="card__text">Прокачайте английский в крупнейшей канадской языковой школе,не выходя из дома.Занятия
+                                в удобное для вас время!</p>
+                        
+                            <div class="card__wrapper">
+                                <div class="card__meta">
+                                    <span class="card__price">7440 <span>&#8381;</span></span>
+                                    <span class="card__price"><span>&#36;</span>130 CAD</span>
+                                </div>
+                                <button class="card__btn">Подробнее</button>
+                            </div>
+                        </li>
+
+                        <li class="card__element">
+                            <img class="card__img" src="/" alt="Человек с ручкой в руках подписывает документы">
+                            <h3 class="card__title">Написание резюме для различных профессий</h3>
+                            <p class="card__text">Хотите найти работу в Канаде? Вам нужно профессиональное резюме.</p>
+                        
+                            <div class="card__wrapper">
+                                <div class="card__meta">
+                                    <span class="card__price">5950 <span>&#8381;</span></span>
+                                    <span class="card__price"><span>&#36;</span>100 CAD</span>
+                                </div>
+                                <button class="card__btn">Подробнее</button>
+                            </div>
+                        </li>
+
+                        <li class="card__element">
+                            <img class="card__img" src="/" alt="Команда обсуждает рабочие моменты ">
+                            <h3 class="card__title">Как найти работу в Канаде</h3>
+                            <p class="card__text">Обучающий курс создан при участии канадского специалиста по найму персонала с 9-летним
+                                опытом работы в Канаде.</p>
+                        
+                            <div class="card__wrapper">
+                                <div class="card__meta">
+                                    <span class="card__price">29950 <span>&#8381;</span></span>
+                                    <span class="card__price"><span>&#36;</span>515 CAD</span>
+                                </div>
+                                <button class="card__btn">Подробнее</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="slider">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="4" fill="#E55241" />
+                            <mask id="a" fill="#fff">
+                                <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" />
+                            </mask>
+                            <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" stroke="#DBDFEC" stroke-width="8" mask="url(#a)" />
+                        </svg>
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="4" fill="#E55241" />
+                            <mask id="a" fill="#fff">
+                                <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" />
+                            </mask>
+                            <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" stroke="#DBDFEC" stroke-width="8" mask="url(#a)" />
+                        </svg>
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="4" fill="#E55241" />
+                            <mask id="a" fill="#fff">
+                                <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" />
+                            </mask>
+                            <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" stroke="#DBDFEC" stroke-width="8" mask="url(#a)" />
+                        </svg>
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="4" fill="#E55241" />
+                            <mask id="a" fill="#fff">
+                                <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" />
+                            </mask>
+                            <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" stroke="#DBDFEC" stroke-width="8" mask="url(#a)" />
+                        </svg>
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="4" fill="#E55241" />
+                            <mask id="a" fill="#fff">
+                                <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" />
+                            </mask>
+                            <path d="M0 8a8 8 0 1 0 8-8v1.293A6.707 6.707 0 1 1 1.293 8H0Z" stroke="#DBDFEC" stroke-width="8" mask="url(#a)" />
+                        </svg>
+                    </div>
+                </article>
             </div>
-
-            <article class="card">
-                <ul class="card__list">
-                    <li class="card__element">
-                        <img class="card__img" src="/" alt="Флаг канады на фоне неба и башни с часами ">
-                        <h3 class="card__title">Консультация по иммиграции или учебе</h3>
-                        <p class="card__text">Нужно больше информациио переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультатнта!</p>
-
-                        <div class="card__wrapper">
-                            <div class="card__meta">
-                                <span class="card__price">5950 <span>&#8381;</span></span>
-                                <span class="card__price"><span>&#36;</span>100 CAD</span>
-                            </div>
-                            <button class="card__btn">Подробнее</button>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="card__list">
-                    <li class="card__element">
-                        <img class="card__img" src="/" alt="Девушка работает за ноутбуком">
-                        <h3 class="card__title">Онлайн-изучение английского языка</h3>
-                        <p class="card__text">Прокачайте английский в крупнейшей канадской языковой школе,не выходя из дома.Занятия в удобное для вас время!</p>
-                
-                        <div class="card__wrapper">
-                            <div class="card__meta">
-                                <span class="card__price">7440 <span>&#8381;</span></span>
-                                <span class="card__price"><span>&#36;</span>130 CAD</span>
-                            </div>
-                            <button class="card__btn">Подробнее</button>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="card__list">
-                    <li class="card__element">
-                        <img class="card__img" src="/" alt="Человек с ручкой в руках подписывает документы">
-                        <h3 class="card__title">Написание резюме для различных профессий</h3>
-                        <p class="card__text">Хотите найти работу в Канаде? Вам нужно профессиональное резюме.</p>
-                
-                        <div class="card__wrapper">
-                            <div class="card__meta">
-                                <span class="card__price">5950 <span>&#8381;</span></span>
-                                <span class="card__price"><span>&#36;</span>100 CAD</span>
-                            </div>
-                            <button class="card__btn">Подробнее</button>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="card__list">
-                    <li class="card__element">
-                        <img class="card__img" src="/" alt="Команда обсуждает рабочие моменты ">
-                        <h3 class="card__title">Как найти работу в Канаде</h3>
-                        <p class="card__text">Обучающий курс создан при участии канадского специалиста по найму персонала с 9-летним опытом работы в Канаде.</p>
-                
-                        <div class="card__wrapper">
-                            <div class="card__meta">
-                                <span class="card__price">29950 <span>&#8381;</span></span>
-                                <span class="card__price"><span>&#36;</span>515 CAD</span>
-                            </div>
-                            <button class="card__btn">Подробнее</button>
-                        </div>
-                    </li>
-                </ul>
-            
-            </article>
         </section>
 
         <section class="immigration">

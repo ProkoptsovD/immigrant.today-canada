@@ -19,7 +19,7 @@ $colors: (
   "bg-footer-secondary": #202020,
   // secondary backround color in footer
   "bg-btn-mobile": rgba(229, 82, 65, 0.1)
-    //color is used for buttons in header mobile,,,
+    //color is used for buttons in header mobile,,,,,
 );
 
 //=================TRANSITION AND MARGINS================//
@@ -32,7 +32,7 @@ $transitions: (
   //is used for  transitions while hovered and focused
 );
 
-$grid-margin-item: 30px; // used in calc() for setting up margins between elements in flex grids
+$grid-margin-item: 10px; // used in calc() for setting up margins between elements in flex grids
 
 //=====================FONTS=========================//
 

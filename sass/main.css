@@ -303,6 +303,7 @@ textarea {
   border-radius: 4px;
   background-color: #e55241;
   color: #f7f7f7;
+  cursor: pointer;
 }
 
 .ask-question-btn {
@@ -317,6 +318,7 @@ textarea {
   border-radius: 4px;
   background-color: transparent;
   color: #e55241;
+  cursor: pointer;
 }
 
 .menu-mobile-btn, .search-btn, .auth-btn {
@@ -327,6 +329,7 @@ textarea {
   margin: 0;
   border: transparent;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 body {
@@ -533,5 +536,86 @@ body {
   background-size: 62px 31px, contain, contain;
   background-position: right 0 top 113px, bottom 0 right 32px, bottom 0 right 0;
   background-repeat: no-repeat;
+}
+
+.popular {
+  padding: 72px 0 35px 0;
+  background-color: wheat;
+}
+
+.popular__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular__heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e222e;
+}
+
+.popular__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  border: transparent;
+  background-color: transparent;
+}
+
+.popular__btn-icon {
+  fill: #e55241;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card__element {
+  -ms-flex-preferred-size: calc( (100% - 4 * 10px) / 2);
+      flex-basis: calc( (100% - 4 * 10px) / 2);
+  margin: 10px;
+}
+
+.card__element:not(:nth-child(-n + 2)) {
+  display: none;
+}
+
+.slider {
+  width: 95px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider > svg {
+  fill: #e55241;
 }
 /*# sourceMappingURL=main.css.map */

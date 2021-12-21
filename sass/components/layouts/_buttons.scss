@@ -12,6 +12,8 @@
 
   background-color: getColor(accent);
   color: getColor(text-alternative);
+
+  cursor: pointer;
 }
 
 %button-inverse {
@@ -27,6 +29,8 @@
 
   background-color: transparent;
   color: getColor(accent);
+
+  cursor: pointer;
 }
 
 //=================BUTTON mobile===================//
@@ -40,4 +44,6 @@
 
   border: transparent;
   border-radius: 4px;
+
+  cursor: pointer;
 }
