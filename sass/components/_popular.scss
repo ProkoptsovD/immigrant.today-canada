@@ -8,29 +8,8 @@
   }
 
   &__heading {
-    @include font-preset(700, 20px, 30px);
-    color: getColor(headings);
+    @extend %section-headings;
   }
-  background-color: wheat;
-}
-
-.popular__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 24px;
-  height: 24px;
-
-  padding: 0;
-  margin: 0;
-
-  border: transparent;
-  background-color: transparent;
-}
-
-.popular__btn-icon {
-  fill: getColor(accent);
 }
 
 //===================building grids=====================//
@@ -47,6 +26,55 @@
   &__element:not(:nth-child(-n + 2)) {
     display: none;
   }
+}
+
+//=================CARDS styles=========================//
+.card__element {
+  border: 1px solid #dbdfec;
+  box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
+    5px 5px 10px rgba(190, 190, 190, 0.25);
+  border-radius: 10px 10px 4px 4px;
+
+  overflow: hidden;
+}
+
+.card__title {
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card__text {
+    display: none;
+  }
+}
+
+.card__wrapper {
+  padding: 15px 12px;
+}
+
+.card__meta {
+  display: flex;
+  align-items: center;
+
+  .card__rouble {
+    @include font-preset(700, 18px, 24px);
+    margin-right: 10px;
+  }
+
+  .card__dollar {
+    @include font-preset(400, 12px, 18px);
+  }
+}
+
+.card__btn {
+  @extend %button;
+  width: 100%;
+  padding: 10px 0;
 }
 
 //==================slider==========================//

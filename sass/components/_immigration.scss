@@ -1,0 +1,24 @@
+.immigration {
+  padding: 35px 0;
+}
+.immigration__wrapper {
+  display: flex;
+  align-items: center;
+
+  & .more-btn {
+    margin-left: auto;
+  }
+}
+
+.immigration-heading {
+  @extend %section-headings;
+}
+
+//====================card grid==========================//
+.card__title {
+  @extend %card-titles;
+
+  &--padding {
+    padding: 15px 12px;
+  }
+}

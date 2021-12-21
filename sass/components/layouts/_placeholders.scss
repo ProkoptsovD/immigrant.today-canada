@@ -1,0 +1,9 @@
+%section-headings {
+  @include font-preset(700, 20px, 30px);
+  color: getColor(headings);
+}
+
+%card-titles {
+  font-weight: 700;
+  color: getColor(headings);
+}

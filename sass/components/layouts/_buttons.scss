@@ -4,7 +4,7 @@
   padding: 20px 50px;
 
   font-family: inherit;
-  @include font-preset(700, 18px, 24px);
+  @include font-preset(700, 16px, 24px);
 
   text-align: center;
   border-color: transparent;
@@ -46,4 +46,28 @@
   border-radius: 4px;
 
   cursor: pointer;
+}
+
+//===============Button with arrow=====================//
+.more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+  margin: 0;
+
+  border: transparent;
+  background-color: transparent;
+
+  &__icon {
+    fill: getColor(accent);
+
+    &:active {
+      fill: getColor(btn-active);
+    }
+  }
 }
