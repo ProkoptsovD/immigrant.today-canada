@@ -63,12 +63,34 @@
 
 //===============links to articles===================//
 .aside__element {
+  display: flex;
   margin-bottom: 1px;
 
   background-color: #ffffff;
+
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover,
+  &:focus {
+    background-color: getColor(bg-while-hover);
+  }
+}
+
+.aside__element:hover::before,
+.aside__element:focus::before {
+  display: block;
+  content: "";
+
+  width: 1px;
+  background-color: getColor(accent);
+  visibility: visible;
+}
+
+.aside__element:hover::before:not(:hover),
+.aside__element:focus::before:not(:focus) {
+  visibility: hidden;
 }
 
 .aside__link {
