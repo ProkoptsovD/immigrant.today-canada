@@ -695,13 +695,32 @@ body {
   padding: 15px 12px;
 }
 
+.aside {
+  padding: 35px 0;
+}
+
 .aside__card:not(:last-child) {
+  border-radius: 10px;
+  -webkit-box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+          box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
   margin-bottom: 40px;
+}
+
+.aside__card:not(:last-child):hover, .aside__card:not(:last-child):focus {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .aside__box {
   position: relative;
   margin-top: 25px;
+}
+
+.aside__card-logo {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  z-index: 3;
 }
 
 .aside__text {
@@ -723,8 +742,13 @@ body {
   margin-bottom: 25px;
 }
 
+.aside__list {
+  background-color: #f3f3f3;
+}
+
 .aside__element {
-  margin-bottom: 9px;
+  margin-bottom: 1px;
+  background-color: #ffffff;
 }
 
 .aside__element:last-child {
@@ -733,7 +757,7 @@ body {
 
 .aside__link {
   display: block;
-  padding: 15px 12px;
+  padding: 10px 12px;
   color: #3a3e48;
 }
 
