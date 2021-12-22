@@ -1,0 +1,78 @@
+.aside__heading {
+  @extend %section-headings;
+}
+
+.aside__wrapper {
+  @extend %headings-wrapper;
+}
+
+.aside__card:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+//================text over image=====================//
+.aside__box {
+  position: relative;
+  margin-top: 25px;
+}
+
+.aside__text {
+  width: 100%;
+  padding: 15px 12px;
+
+  &--color {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(30, 34, 46, 0.4);
+    color: getColor(text-alternative);
+  }
+
+  &--no-style {
+    position: initial;
+    padding: 0;
+
+    margin-bottom: 25px;
+  }
+}
+//======================================================//
+
+//===============links to articles===================//
+.aside__element {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aside__link {
+  display: block;
+  padding: 15px 12px;
+
+  color: getColor(text-main);
+}
+//=======================================================//
+.aside__heading.aside__heading--margin {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.aside__btn {
+  @extend %button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 15px 0;
+
+  font-size: 14px;
+  line-height: lineHeight(14px, 20px);
+
+  & > svg {
+    margin-left: 10px;
+    fill: #ffffff;
+  }
+}

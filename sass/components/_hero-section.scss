@@ -8,7 +8,7 @@
   &__heading {
     margin-bottom: 20px;
 
-    @include font-preset(700, 20px, 36px);
+    @include font-preset(700, 24px, 36px);
     color: getColor(headings);
   }
 }
@@ -17,7 +17,7 @@
   display: flex;
   margin-bottom: 15px;
 
-  @include font-preset(400, 15px, 24px);
+  @include font-preset(400, 16px, 24px);
 
   &:last-child {
     margin-bottom: 35px;

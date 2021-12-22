@@ -2,8 +2,7 @@
   padding: 35px 0;
 }
 .immigration__wrapper {
-  display: flex;
-  align-items: center;
+  @extend %headings-wrapper;
 
   & .more-btn {
     margin-left: auto;
