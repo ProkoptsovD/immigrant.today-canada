@@ -1,10 +1,10 @@
-.study {
-  padding: 35px 0;
+.job {
+  padding: 25px 0 35px 0;
 }
-.study__wrapper {
+.job__wrapper {
   @extend %headings-wrapper;
 }
 
-.study__heading {
+.job__heading {
   @extend %section-headings;
 }

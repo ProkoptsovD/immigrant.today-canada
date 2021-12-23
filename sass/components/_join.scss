@@ -1,0 +1,79 @@
+.join {
+  padding: 70px 0;
+
+  &__container {
+    position: relative;
+    padding: 50px 15px;
+  }
+
+  &__comunity {
+    display: flex;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 10%;
+    right: 4px;
+
+    width: 30px;
+    height: 34px;
+  }
+
+  &__heading {
+    @extend %section-headings;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: lineHeight(16px, 24px);
+  }
+}
+
+.join__container span {
+  display: inline-block;
+  margin-bottom: 30px;
+
+  & > span {
+    font-weight: 700;
+    color: getColor(accent);
+  }
+}
+
+//====================form signup and registration==================//
+.signup-form__label {
+  display: block;
+}
+.signup-form__input {
+  appearance: none;
+  display: block;
+  width: 100%;
+}
+//===================form buttons=================//
+.btn__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  padding: 15px 0;
+
+  &__signup {
+    @extend %button;
+    margin-right: 10px;
+
+    font-size: 14px;
+    line-height: lineHeight(14px, 20px);
+  }
+
+  &__login {
+    @extend %button-inverse;
+    font-size: 14px;
+    line-height: lineHeight(14px, 20px);
+  }
+}

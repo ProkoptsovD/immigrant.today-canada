@@ -1,0 +1,10 @@
+.visa {
+  padding: 25px 0 35px 0;
+}
+.visa__wrapper {
+  @extend %headings-wrapper;
+}
+
+.visa__heading {
+  @extend %section-headings;
+}

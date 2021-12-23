@@ -3,6 +3,7 @@
 
   &__heading {
     @extend %section-headings;
+    font-size: 20px;
   }
 
   &__wrapper {
@@ -10,11 +11,19 @@
   }
 }
 
-.aside__card:not(:last-child) {
+.thumb:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.aside__card {
   border-radius: 10px;
   box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
     5px 5px 10px rgba(190, 190, 190, 0.25);
-  margin-bottom: 40px;
+  margin-top: 25px;
+
+  &--no-shadow {
+    box-shadow: none;
+  }
 
   &:hover,
   &:focus {

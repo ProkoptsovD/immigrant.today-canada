@@ -29,11 +29,15 @@
 //=================CARDS styles=========================//
 .card__element {
   border: 1px solid #dbdfec;
-  box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
-    5px 5px 10px rgba(190, 190, 190, 0.25);
   border-radius: 10px 10px 4px 4px;
 
   overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
+      5px 5px 10px rgba(190, 190, 190, 0.25);
+  }
 }
 
 .card__title {
