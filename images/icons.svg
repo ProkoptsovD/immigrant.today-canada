@@ -160,5 +160,8 @@
 <path fill="#e55241" style="fill: var(--color1, #e55241)" d="M24 16c0 4.418-3.582 8-8 8s-8-3.582-8-8c0-4.418 3.582-8 8-8s8 3.582 8 8z"></path>
 <path fill="none" stroke="#dbdfec" style="stroke: var(--color2, #dbdfec)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16c0-8.837-7.163-16-16-16v0 2.586c7.408 0 13.414 6.006 13.414 13.414s-6.006 13.414-13.414 13.414c-7.408 0-13.414-6.006-13.414-13.414h-2.586z"></path>
 </symbol>
+<symbol id="icon-checkbox" viewBox="0 0 41 32">
+<path d="M14.545 30.545l-14.545-14.429 4.625-4.48 9.92 9.745 21.556-21.382 4.625 4.596-26.182 25.949z"></path>
+</symbol>
 </defs>
 </svg>

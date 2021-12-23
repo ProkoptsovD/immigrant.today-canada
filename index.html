@@ -953,26 +953,26 @@
 
                     <form class="signup-form" name="signup-form" autocomplete="on">
                         <label for="signup-form" class="signup-form__label">
-                            <input class="signup-form__input" type="text" placeholder="Ваше имя" autofocus>
-                            <input class="signup-form__input" type=" email" placeholder="Ваш e-mail">
-                            <input class="signup-form__input" type=" password" placeholder="Пароль">
+                            <input class="signup-form__input" name="name" type="text" value="name" placeholder="Ваше имя" autofocus>
+                            <input class="signup-form__input" name="email" type="email" value="email" placeholder="Ваш e-mail">
+                            <input class="signup-form__input" name="password" type="password" value="password" placeholder="Пароль">
                         </label>
-                        <label>
-                            
-                        </label>
-                        <!-- <label class="submit__control">
-                            <div class="submit__generated">
-                        
+                        <label class="almost-captcha" for="captcha" id="captcha">
+                            <input class="signup-form__input almost-captcha__input" type="number" name="captcha" id="captcha" value="sum" placeholder="Введите ответ">
+                            <div class="almost-captcha__expression">
+                                9+3=
                             </div>
-                            <i class="fa fa-refresh"></i>
-                            <span class="submit__error hide">Incorrect value</span>
-                            <span class="submit__error--empty hide">Required field cannot be left blank</span>
+                        </label>
+                        <label for="checkbox" class="checkbox">
+                            <input class="checkbox__input" type="checkbox" id="checkbox" name="checkbox" value="user-agreement">
+                            <div class="checkbox__icon">
+                                <svg width="14px" height="11px">
+                                    <use href="./images/icons.svg#icon-checkbox"></use>
+                                </svg>
+                            </div>
+                            Я согласен(а) на обработку моих персональных данных
                         </label>
                         
-                        <input class="submit overlay" type="submit" value="Submit" />
-                        <div class="submit__overlay"></div> -->
-                    
-                    
                         <div class="btn__wrapper">
                             <button class="btn btn__signup" type="submit">
                                 Зарегистироваться
