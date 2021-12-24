@@ -129,6 +129,12 @@
     font-weight: 700;
     color: #ffffff;
   }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 //===============copyright=========================//
@@ -143,8 +149,8 @@
 
   &__link {
     display: block;
-    font-size: 10px;
-    line-height: lineHeight(10px, 18px);
+    font-size: 12px;
+    line-height: lineHeight(12px, 18px);
 
     color: #ffffff;
   }

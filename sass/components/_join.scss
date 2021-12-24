@@ -4,6 +4,10 @@
   &__container {
     position: relative;
     padding: 50px 15px;
+
+    border-radius: 10px;
+
+    background-color: getColor(bg-hero);
   }
 
   &__comunity {
@@ -12,7 +16,7 @@
 
   &__logo {
     position: absolute;
-    top: 8%;
+    top: 7%;
     right: 4px;
 
     width: 30px;
@@ -21,7 +25,7 @@
 
   &__heading {
     @extend %section-headings;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 30px;
   }
 
@@ -35,12 +39,15 @@
 
 .join__container span {
   display: inline-block;
-  margin-bottom: 30px;
 
   & > span {
     font-weight: 700;
     color: getColor(accent);
   }
+}
+
+.join__container > span:nth-of-type(1) {
+  margin-bottom: 30px;
 }
 
 //====================form signup and registration==================//
@@ -104,12 +111,13 @@
 //======================custom checkbox==================//
 .checkbox {
   display: flex;
+  justify-content: center;
   align-items: center;
 
   margin-bottom: 15px;
 
-  font-size: 9.5px;
-  line-height: lineHeight(9.5px, 15px);
+  font-size: 10px;
+  line-height: lineHeight(10px, 15px);
 
   color: getColor(headings);
 
@@ -125,7 +133,7 @@
 
   width: 24px;
   height: 24px;
-  margin: 4px auto 4px 0;
+  margin: 4px 15px 4px 0;
 
   border: 2px solid getColor(form-color);
   border-radius: 2px;
@@ -133,7 +141,7 @@
   & > svg {
     width: 14px;
     height: 11px;
-    fill: #ffffff;
+    fill: none;
   }
 
   &:hover {
@@ -159,13 +167,13 @@
     @extend %button;
     margin-right: 10px;
 
-    font-size: 13px;
+    font-size: 14px;
     line-height: lineHeight(14px, 20px);
   }
 
   &__login {
     @extend %button-inverse;
-    font-size: 13px;
+    font-size: 14px;
     line-height: lineHeight(14px, 20px);
   }
 }

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Immigrant.Today | Ваш путь в Канаду</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -156,15 +159,16 @@
                     <h2 class="popular__heading">Популярные предложения</h2>
                     <button class="more-btn">
                         <svg class="more-btn__icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-more-arrow"></use>
+                            <use href="./images/icons.svg#arrow-right"></use>
                         </svg>
                     </button>
                 </div>
 
                 <article>
                     <ul class="card">
-                        <li class="card__element">
-                            <img class="card__img" src="./images/popular/consulting.jpg" alt="Флаг канады на фоне неба и башни с часами ">
+                        <li class="card__element popular__card">
+                            <img class="card__img" src="./images/popular/consulting.jpg" alt="Флаг канады на фоне неба и башни с часами">
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
                         
                             <div class="card__wrapper">
                                 <h3 class="card__title">Консультация по иммиграции или учебе</h3>
@@ -180,9 +184,10 @@
                             <button class="card__btn">Подробнее</button>
                         </li>
 
-                        <li class="card__element">
+                        <li class="card__element popular__card">
                             <img class="card__img" src="./images/popular/online-lang-stady.jpg" alt="Девушка работает за ноутбуком">
-                        
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+
                             <div class="card__wrapper">
                                 <h3 class="card__title">Онлайн-изучение английского языка</h3>
                                 <p class="card__text">Прокачайте английский в крупнейшей канадской языковой школе,не выходя из дома.Занятия
@@ -197,9 +202,10 @@
                             <button class="card__btn">Подробнее</button>
                         </li>
 
-                        <li class="card__element">
+                        <li class="card__element popular__card">
                             <img class="card__img" src="./images/popular/cv-writing.jpg" alt="Человек с ручкой в руках подписывает документы">
-                        
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+
                             <div class="card__wrapper">
                                 <h3 class="card__title">Написание резюме для различных профессий</h3>
                                 <p class="card__text">Хотите найти работу в Канаде? Вам нужно профессиональное резюме.</p>
@@ -213,9 +219,10 @@
                             <button class="card__btn">Подробнее</button>
                         </li>
 
-                        <li class="card__element">
+                        <li class="card__element popular__card">
                             <img class="card__img" src="./images/popular/job-search.jpg" alt="Команда обсуждает рабочие моменты ">
-                            
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+
                             <div class="card__wrapper"></div>
                                 <h3 class="card__title">Как найти работу в Канаде</h3>
                                 <p class="card__text">Обучающий курс создан при участии канадского специалиста по найму персонала с 9-летним
@@ -297,7 +304,7 @@
                     <h2 class="immigration__heading">Иммиграция</h2>
                     <button class="more-btn">
                         <svg class="more-btn__icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-more-arrow"></use>
+                            <use href="./images/icons.svg#arrow-right"></use>
                         </svg>
                     </button>
                 </div>
@@ -307,28 +314,44 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/immigration/immigration-consulting.jpg" alt="Девушка с паспортом и авиабилетом в руках">
-                                <h3 class="card__title card__title--padding">Консультация по иммиграции или учебе</h3>
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
+                                    Консультация по иммиграции или учебе
+                                </h3>
                             </a>
                         </li>
 
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/immigration/federal-programms.jpg" alt="Совещание в большом зале">
-                                <h3 class="card__title card__title--padding">Федеральные программы иммиграции</h3>
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
+                                    Федеральные программы иммиграции
+                                </h3>
                             </a>
                         </li>
 
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/immigration/province-programms.jpg" alt="Специалист консультирует иммигрантов в кабинете">
-                                <h3 class="card__title card__title--padding">Провинциальные программы иммиграции</h3>
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
+                                    Провинциальные программы иммиграции
+                                </h3>
                             </a>
                         </li>
 
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/immigration/atlantic-pilot.jpg" alt="Человек разговаривает по телефону">
-                                <h3 class="card__title card__title--padding">Атлантический иммиграционный пилот</h3>
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
+                                    Атлантический иммиграционный пилот
+                                </h3>
                             </a>
                         </li>
                     </ul>
@@ -402,7 +425,7 @@
                         </h3>
                         <button class="more-btn">
                             <svg class="more-btn__icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-more-arrow"></use>
+                                <use href="./images/icons.svg#arrow-right"></use>
                             </svg>
                         </button>
                     </div>
@@ -410,7 +433,8 @@
                     <div class="aside__card">
                         <div class="aside__box">
                             <img src="./images/aside-1/what-to-start-with.jpg" alt="Две женщины подписывают бумаги">
-                            <img class="aside__card-logo" src="./images/logo-in-card.svg" alt="Логотип компании Immigrant.Today">
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                            
                             <p class="aside__text aside__text--color">
                                 Бесплатная оценка шансов на иммиграцию в Канаду
                             </p>
@@ -451,7 +475,7 @@
                         </h3>
                         <button class="more-btn">
                             <svg class="more-btn__icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-more-arrow"></use>
+                                <use href="./images/icons.svg#arrow-right"></use>
                             </svg>
                         </button>
                     </div>
@@ -505,7 +529,7 @@
                         <button class="aside__btn" type="button">
                             Получить консультацию
                             <svg width="20px" height="20px">
-                                <use href="images/icons.svg#icon-more-arrow-btn"></use>
+                                <use href="images/icons.svg#arrow-right-greater"></use>
                             </svg>
                         </button>
                     </div>
@@ -519,7 +543,7 @@
                     <h2 class="study__headings">Учеба</h2>
                     <button class="more-btn">
                         <svg class="more-btn__icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-more-arrow"></use>
+                            <use href="./images/icons.svg#arrow-right"></use>
                         </svg>
                     </button>
                 </div>
@@ -529,6 +553,8 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/study/universities&colleges.jpg" alt="Старинный колледж в Канаде">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
                                 <h3 class="card__title card__title--padding">
                                     Университеты и колледжи Канады
                                 </h3>
@@ -539,6 +565,8 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/study/enter-university.jpg" alt="Выпускники колледжа с дипломами">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
                                 <h3 class="card__title card__title--padding">
                                     Поступление в канадские вузы
                                 </h3>
@@ -549,6 +577,8 @@
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/study/language-schools.jpg"
                                     alt="Два парня и три девушки учат английский язык">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
                                 <h3 class="card__title card__title--padding">
                                     Языковые школы в Канаде
                                 </h3>
@@ -559,6 +589,8 @@
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/study/cost-of-study.jpg"
                                     alt="Девушка в карсной свитере с ноутбуком в руках">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+
                                 <h3 class="card__title card__title--padding">
                                     Стоимость обучения в Канаде
                                 </h3>
@@ -634,7 +666,7 @@
                     <h2 class="job__headline">Работа</h2>
                     <button class="more-btn">
                         <svg class="more-btn__icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-more-arrow"></use>
+                            <use href="./images/icons.svg#arrow-right"></use>
                         </svg>
                     </button>
                </div>
@@ -644,7 +676,9 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/job/professions-in-canada.jpg" alt="Два парня работают за компьютером">
-                                <h3 class="card__title">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
                                     Профессии в Канаде
                                 </h3>
                             </a>
@@ -653,7 +687,9 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/job/job-seeking.jpg" alt="Девушка работает за ноутбуком">
-                                <h3 class="card__title">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
                                     Поиск работы в Канаде
                                 </h3>
                             </a>
@@ -662,7 +698,9 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/job/temporary-job.jpg" alt="Молодые люди празднуют успешное завершение проекта">
-                                <h3 class="card__title">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
                                     Временная работа для иностранцев
                                 </h3>
                             </a>
@@ -671,7 +709,9 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/job/global-talent-stream.jpg" alt="Совещание в просторном зале на фоне заката">
-                                <h3 class="card__title">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
+                                <h3 class="card__title card__title--padding">
                                     Global Talent Stream
                                 </h3>
                             </a>
@@ -744,7 +784,7 @@
                     <h2 class="visa__heading">Визы</h2>
                     <button class="more-btn">
                         <svg class="more-btn__icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-more-arrow"></use>
+                            <use href="./images/icons.svg#arrow-right"></use>
                         </svg>
                     </button>
                 </div>
@@ -754,6 +794,8 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/visa/visa-to-canada.jpg" alt="Горное озеро с голубой водой">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
                                 <h3 class="card__title card__title--padding">
                                     Визы в Канаду самостотельно
                                 </h3>
@@ -763,6 +805,8 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/visa/visa-lang-study.jpg" alt="Коллеги радуются принятому решению">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
                                 <h3 class="card__title card__title--padding">
                                     Виза для изучения языка и поиска работы
                                 </h3>
@@ -772,6 +816,8 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/visa/vias-prolongation.jpg" alt="Страницы паспорта с визами">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
                                 <h3 class="card__title card__title--padding">
                                     Как продлить туристическую визу
                                 </h3>
@@ -781,6 +827,8 @@
                         <li class="card__element">
                             <a class="card__link" href="#">
                                 <img class="card__img" src="./images/visa/visa-type-change.jpg" alt="Люди за столом подписывают документы">
+                                <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                                
                                 <h3 class="card__title card__title--padding">
                                     Изменть туристическую визу на студенческую
                                 </h3>
@@ -855,7 +903,7 @@
                         <h3 class="aside__heading">Общее</h3>
                         <button class="more-btn">
                             <svg class="more-btn__icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-more-arrow"></use>
+                                <use href="./images/icons.svg#arrow-right"></use>
                             </svg>
                         </button>
                     </div>
@@ -863,6 +911,8 @@
                     <div class="aside__card">
                         <div class="aside__box">
                             <img src="./images/aside-2/common.jpg" alt="Вид на заснеженную гору">
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                            
                             <p class="aside__text aside__text--color">
                                 Лучшие маленькие города Канады
                             </p>
@@ -904,7 +954,7 @@
                         </h3>
                         <button class="more-btn">
                             <svg class="more-btn__icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-more-arrow"></use>
+                                <use href="./images/icons.svg#arrow-right"></use>
                             </svg>
                         </button>
                     </div>
@@ -913,7 +963,9 @@
                         <div class="aside__box">
                             <img src="./images/aside-2/success-stories.jpg"
                                 alt="Участиники соревнований Олимпиады в Токие в беге на дистанции">
-                            <p class="aside__text aside__text--color">
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                            
+                                <p class="aside__text aside__text--color">
                                 У Канады золотая медаль на олимпиаде в Токио!
                             </p>
                         </div>
@@ -954,7 +1006,7 @@
                         </h3>
                         <button class="more-btn">
                             <svg class="more-btn__icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-more-arrow"></use>
+                                <use href="./images/icons.svg#arrow-right"></use>
                             </svg>
                         </button>
                     </div>
@@ -962,6 +1014,8 @@
                     <div class="aside__card">
                         <div class="aside__box">
                             <img src="./images/aside-2/need-to-know.jpg" alt="Человек делает запись в блокнот">
+                            <img class="logo-over-card" src="./images/logo-over-images.png" alt="Логотп компании Immigrant.Today">
+                            
                             <p class="aside__text aside__text--color">
                                 Минимальная зарплата в Канаде в 2021 году
                             </p>
@@ -1018,7 +1072,7 @@
                     <button class="about__btn" type="button">
                         Бесплатная оценка шансов
                         <svg width="20px" height="20px">
-                            <use href="images/icons.svg#icon-more-arrow-btn"></use>
+                            <use href="images/icons.svg#arrow-right-greater"></use>
                         </svg>
                     </button>
                 </div>

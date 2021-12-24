@@ -28,6 +28,8 @@
 
 //=================CARDS styles=========================//
 .card__element {
+  position: relative;
+
   border: 1px solid #dbdfec;
   border-radius: 10px 10px 4px 4px;
 
@@ -38,6 +40,13 @@
     box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
       5px 5px 10px rgba(190, 190, 190, 0.25);
   }
+}
+
+//this prevents button's jump when viewport's width becomes smaller
+.popular__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__title {

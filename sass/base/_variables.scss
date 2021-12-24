@@ -46,6 +46,10 @@ $font-weight: 400;
 $font-size: 14px;
 $line-height: 20px;
 
+$font-main: "Nunito Sans", sans-serif;
+$font-weight: 400;
+$font-size: 14px;
+$line-height: 20px;
 //=====================COLORS MAP FUNCTIONS==============//
 @function getColor($key) {
   @return map-get($colors, $key);

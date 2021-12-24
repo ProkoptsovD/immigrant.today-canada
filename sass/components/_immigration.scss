@@ -1,5 +1,7 @@
 .immigration {
   padding: 35px 0;
+
+  background-color: getColor(bg-sections-color);
 }
 .immigration__wrapper {
   @extend %headings-wrapper;

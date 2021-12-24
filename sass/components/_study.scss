@@ -1,5 +1,7 @@
 .study {
   padding: 35px 0;
+
+  background-color: getColor(bg-sections-color);
 }
 .study__wrapper {
   @extend %headings-wrapper;

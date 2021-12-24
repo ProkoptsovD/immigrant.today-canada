@@ -1,5 +1,7 @@
 .visa {
   padding: 25px 0 35px 0;
+
+  background-color: getColor(bg-sections-color);
 }
 .visa__wrapper {
   @extend %headings-wrapper;
