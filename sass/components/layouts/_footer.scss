@@ -52,9 +52,11 @@
 //=================social links styles===================//@
 .socials {
   display: flex;
+  flex-wrap: wrap;
 
   &__list {
     display: flex;
+    margin-bottom: 15px;
   }
 
   &__element {

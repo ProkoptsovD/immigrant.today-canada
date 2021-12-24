@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .menu {
   display: none;
@@ -22,8 +25,13 @@
   @extend %button-mobile;
   background-color: getColor(accent);
 
+  &__icon-menu {
+    fill: #ffffff;
+  }
+
   &__icon-cross {
     display: none;
+    fill: #ffffff;
 
     .menu-mobile-btn.is-opened & {
       display: block;

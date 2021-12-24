@@ -440,6 +440,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .menu {
@@ -458,8 +460,13 @@ body {
   background-color: #e55241;
 }
 
+.menu-mobile-btn__icon-menu {
+  fill: #ffffff;
+}
+
 .menu-mobile-btn__icon-cross {
   display: none;
+  fill: #ffffff;
 }
 
 .menu-mobile-btn.is-opened .menu-mobile-btn__icon-cross {
@@ -485,11 +492,6 @@ body {
 
 .auth-btn__icon {
   fill: #e55241;
-}
-
-.header__logo > img {
-  width: 133px;
-  height: 80px;
 }
 
 .hero {
@@ -687,13 +689,32 @@ body {
 }
 
 .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 95px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .slider > svg {
+  fill: #dbdfec;
+}
+
+.slider > svg:not(:last-child) {
+  margin-right: 8px;
+}
+
+.slider svg.is-current {
   fill: #e55241;
+}
+
+.slider__mask {
+  visibility: hidden;
+}
+
+.slider__mask.is-current {
+  visibility: visible;
 }
 
 .immigration {
@@ -1135,12 +1156,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 15px;
 }
 
 .socials__element {
