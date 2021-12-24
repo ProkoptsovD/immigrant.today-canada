@@ -953,9 +953,9 @@
 
                     <form class="signup-form" name="signup-form" autocomplete="on">
                         <label for="signup-form" class="signup-form__label">
-                            <input class="signup-form__input" name="name" type="text" value="name" placeholder="Ваше имя" autofocus>
-                            <input class="signup-form__input" name="email" type="email" value="email" placeholder="Ваш e-mail">
-                            <input class="signup-form__input" name="password" type="password" value="password" placeholder="Пароль">
+                            <input class="signup-form__input" name="name" type="text" placeholder="Ваше имя">
+                            <input class="signup-form__input" name="email" type="email" placeholder="Ваш e-mail">
+                            <input class="signup-form__input" name="password" type="password" placeholder="Пароль">
                         </label>
                         <label class="almost-captcha" for="captcha" id="captcha">
                             <input class="signup-form__input almost-captcha__input" type="number" name="captcha" id="captcha" value="sum" placeholder="Введите ответ">
@@ -964,12 +964,14 @@
                             </div>
                         </label>
                         <label for="checkbox" class="checkbox">
-                            <input class="checkbox__input" type="checkbox" id="checkbox" name="checkbox" value="user-agreement">
                             <div class="checkbox__icon">
-                                <svg width="14px" height="11px">
-                                    <use href="./images/icons.svg#icon-checkbox"></use>
+                                <input class="checkbox__input" type="checkbox" id="checkbox" name="checkbox" value="user-agreement">
+                                <svg>
+                                    <use href="./images/icons.svg#checked"></use>
                                 </svg>
                             </div>
+
+                            
                             Я согласен(а) на обработку моих персональных данных
                         </label>
                         

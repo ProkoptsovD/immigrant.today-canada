@@ -291,6 +291,17 @@ textarea {
   resize: none;
 }
 
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .popular__heading, .immigration__heading, .aside__heading, .study__heading, .job__heading, .visa__heading, .about__heading, .join__heading {
   font-weight: 700;
   font-size: 22px;
@@ -1004,17 +1015,40 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 9px;
+  line-height: 1.66667;
+  color: #1e222e;
 }
 
 .checkbox__icon {
-  width: 40px;
-  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 4px 15px 4px 0;
+  border: 2px solid #dbdfec;
+  border-radius: 2px;
 }
 
 .checkbox__icon > svg {
-  width: 20px;
-  height: 20px;
-  fill: wheat;
+  width: 14px;
+  height: 11px;
+  fill: #ffffff;
+}
+
+.checkbox__icon:hover {
+  cursor: pointer;
+}
+
+.checkbox__input:checked + svg {
+  fill: #e55241;
 }
 
 .btn__wrapper {

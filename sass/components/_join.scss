@@ -105,26 +105,43 @@
 .checkbox {
   display: flex;
   align-items: center;
-}
 
-//   & > svg {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
+  font-size: 9px;
+  line-height: lineHeight(9px, 15px);
 
-//     fill: red;
-//   }
-// }
-.checkbox__icon {
-  width: 40px;
-  height: 40px;
+  color: getColor(headings);
 
-  & > svg {
-    width: 20px;
-    height: 20px;
-    fill: wheat;
+  &__input {
+    @extend %visually-hidden;
   }
 }
+
+.checkbox__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+  margin: 4px 15px 4px 0;
+
+  border: 2px solid getColor(form-color);
+  border-radius: 2px;
+
+  & > svg {
+    width: 14px;
+    height: 11px;
+    fill: #ffffff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.checkbox__input:checked + svg {
+  fill: getColor(accent);
+}
+
 //===================form buttons=================//
 .btn__wrapper {
   display: flex;
