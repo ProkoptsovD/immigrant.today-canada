@@ -106,8 +106,10 @@
   display: flex;
   align-items: center;
 
-  font-size: 9px;
-  line-height: lineHeight(9px, 15px);
+  margin-bottom: 15px;
+
+  font-size: 9.5px;
+  line-height: lineHeight(9.5px, 15px);
 
   color: getColor(headings);
 
@@ -123,7 +125,7 @@
 
   width: 24px;
   height: 24px;
-  margin: 4px 15px 4px 0;
+  margin: 4px auto 4px 0;
 
   border: 2px solid getColor(form-color);
   border-radius: 2px;
@@ -157,13 +159,13 @@
     @extend %button;
     margin-right: 10px;
 
-    font-size: 14px;
+    font-size: 13px;
     line-height: lineHeight(14px, 20px);
   }
 
   &__login {
     @extend %button-inverse;
-    font-size: 14px;
+    font-size: 13px;
     line-height: lineHeight(14px, 20px);
   }
 }

@@ -1,0 +1,163 @@
+.footer {
+  background-color: getColor(bg-footer-primary);
+
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.tabs {
+  margin-bottom: 30px;
+
+  &__element {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2f2f2f;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    @include font-preset(600, 12px, 18px);
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    margin-left: auto;
+
+    fill: #ffffff;
+  }
+}
+
+.tabs.tabs--bg-map {
+  background-image: url(../images/footer-map-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 5px;
+  background-position-y: -3px;
+}
+
+//=================social links styles===================//@
+.socials {
+  display: flex;
+
+  &__list {
+    display: flex;
+  }
+
+  &__element {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 4px;
+
+    background-color: #373737;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    fill: #ffffff;
+  }
+
+  &__icon--bigger {
+    width: 32px;
+    height: 32px;
+  }
+}
+//==================YOUTUBE button==================//
+.socials__youtube {
+  display: flex;
+  align-items: center;
+  width: 156px;
+
+  padding-left: 8px;
+  margin-bottom: 20px;
+
+  background-color: #e62117;
+
+  & span {
+    margin: 0 7px;
+    @include font-preset(600, 14px, 20px);
+    color: #ffffff;
+  }
+
+  & div {
+    padding: 6px 8px;
+
+    height: 100%;
+    background-color: #ffffff;
+    color: getColor(price-color);
+  }
+}
+
+//======================address=========================//
+.address__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.address {
+  margin-bottom: 30px;
+  padding: 0 18px;
+
+  &__link {
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+//===============copyright=========================//
+.copyright {
+  display: flex;
+  padding: 12px 0 12px 26px;
+  background-color: getColor(bg-footer-secondary);
+
+  &__heading {
+    display: none;
+  }
+
+  &__link {
+    display: block;
+    font-size: 10px;
+    line-height: lineHeight(10px, 18px);
+
+    color: #ffffff;
+  }
+
+  & a:nth-of-type(1) {
+    display: flex;
+
+    &::after {
+      display: block;
+      content: "";
+
+      width: 1px;
+      margin: 0 10px;
+
+      background-color: #ffffff;
+    }
+  }
+}
