@@ -1,0 +1,163 @@
+.migrate-to-canada {
+  padding: 40px 0 70px 0;
+
+  &__heading {
+    @extend %section-headings;
+    margin-bottom: 30px;
+  }
+}
+
+.tip {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  padding: 20px 0 20px 15px;
+
+  border-radius: 4px;
+  background-color: getColor(bg-hero);
+
+  &__text,
+  &__link {
+    font-size: 16px;
+    line-height: lineHeight(16px, 24px);
+  }
+
+  &__link {
+    font-weight: 700;
+    color: getColor(accent);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__btn-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: getColor(price-color);
+
+    .tip__btn:active & {
+      fill: getColor(btn-active);
+    }
+  }
+}
+
+//thumb for logo and articles category block
+
+.img-thumb {
+  position: relative;
+}
+
+//=================articles styles========================//
+.articles__element {
+  border: 1px solid getColor(form-color);
+  border-radius: 10px;
+}
+
+.articles__element {
+  margin-bottom: 30px;
+}
+
+.articles__wrapper {
+  padding: 15px 15px 20px 15px;
+}
+
+.articles__heading {
+  @extend %card-titles;
+  margin-bottom: 5px;
+}
+
+.articles__text {
+  color: getColor(headings);
+}
+
+.articles__category {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+
+  padding: 5px 10px;
+
+  @include font-preset(600, 10px, 15px);
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  background-color: rgba(229, 82, 65, 0.7);
+  color: #ffffff;
+}
+
+//===========================switcher styles==================================//
+.switcher {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  line-height: lineHeight(12px, 18px);
+
+  color: getColor(headings);
+
+  & :not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__btn,
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid getColor(form-color);
+    border-radius: 4px;
+
+    background-color: #ffffff;
+    color: currentColor;
+
+    cursor: pointer;
+
+    & > svg {
+      fill: currentColor;
+    }
+  }
+}
+
+.switcher__btn:active .switcher__btn-icon {
+  fill: getColor(accent);
+}
+
+.switcher__box:hover,
+.switcher__box:focus {
+  border-color: getColor(btn-active);
+
+  background-color: getColor(btn-active);
+  color: #ffffff;
+}
+
+.current {
+  border-color: getColor(accent);
+
+  background-color: getColor(accent);
+  color: #ffffff;
+}
+//====================background color for popular section in articles-category page============================//@include
+.popular--bg-color {
+  background-color: getColor(bg-sections-color);
+}
