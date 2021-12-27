@@ -4,6 +4,11 @@
 @import "./components/layouts/mixins";
 @import "./components/layouts/placeholders";
 @import "./components/layouts/buttons";
+@import "./components/layouts/book-buying-aside";
+@import "./components/layouts/hashtags";
+@import "./components/layouts/latest-news";
+@import "./components/layouts/more-articles";
+@import "./components/layouts/comments";
 @import "./base/body";
 @import "./base/container";
 @import "./base/logo-over-card-image";
@@ -21,3 +26,4 @@
 @import "./components/join";
 @import "./components/layouts/footer";
 @import "./components/articles-category-page/articles-category";
+@import "./components/article-itself-page/article-itself-page";

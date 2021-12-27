@@ -1,0 +1,98 @@
+.section-title {
+  @extend %visually-hidden;
+}
+
+.article {
+  padding: 40px 0;
+
+  &__heading {
+    margin-bottom: 20px;
+  }
+
+  &__meta {
+    display: flex;
+
+    margin-bottom: 20px;
+
+    & > :not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.bookmarks {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  line-height: lineHeight(12px, 18px);
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 8px;
+  }
+}
+
+.rating {
+  display: flex;
+
+  & > svg:last-of-type {
+    margin-right: 10px;
+  }
+}
+
+.rating__star {
+  --star-active: #fadb14;
+  --star-inactive: rgba(0, 0, 0, 0.04);
+
+  width: 16px;
+  height: 16px;
+
+  fill: var(--star-inactive);
+
+  &--active {
+    fill: var(--star-active);
+  }
+}
+
+//==================article styles=====================//
+
+.article .img-thumb {
+  margin-bottom: 30px;
+
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.article__subheading {
+  margin-bottom: 15px;
+
+  @include font-preset(700, 18px, 24px);
+  color: getColor(headings);
+}
+
+.article__text {
+  margin-bottom: 15px;
+
+  & a {
+    color: getColor(accent);
+  }
+}
+
+//=================margin for book-buying section==================//
+.book-buying.article__margin {
+  margin: 40px 0;
+}
+//===============margin between aside blocks===================//
+
+.article__section .hashtags,
+.article__section .latest-news,
+.article__section .chances {
+  margin-bottom: 40px;
+}
+
+.article__section .more-articles {
+  margin-bottom: 35px;
+}

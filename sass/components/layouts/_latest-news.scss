@@ -1,0 +1,32 @@
+.latets-news {
+  color: getColor(headings);
+
+  &__heading {
+    margin-bottom: 20px;
+  }
+}
+
+.latest-news__element {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  & > svg {
+    width: 7px;
+    height: 7px;
+
+    margin-right: 10px;
+
+    fill: getColor(accent);
+  }
+
+  & a {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: getColor(accent);
+    }
+  }
+}

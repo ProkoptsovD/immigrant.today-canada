@@ -1,0 +1,33 @@
+.hashtags__heading {
+  color: getColor(accent);
+  margin-bottom: 20px;
+}
+
+.hashtags__list {
+  font-size: 10px;
+  line-height: lineHeight(10px, 15px);
+  text-transform: uppercase;
+
+  color: getColor(headings);
+}
+
+.hashtags__element {
+  display: inline-block;
+
+  margin-bottom: 10px;
+  padding: 5px 12px;
+
+  border: 1px dashed getColor(accent);
+  border-radius: 100px;
+
+  background-color: getColor(bg-while-hover);
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  &--current {
+    background-color: getColor(accent);
+    color: #ffffff;
+  }
+}

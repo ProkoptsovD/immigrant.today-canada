@@ -291,7 +291,7 @@ textarea {
   resize: none;
 }
 
-.checkbox__input {
+.checkbox__input, .section-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -392,6 +392,174 @@ textarea {
   fill: #0c60ba;
 }
 
+.book-buying {
+  padding: 30px 15px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+.book-buying__heading {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1e222e;
+}
+
+.book-buying__text {
+  margin-bottom: 15px;
+  color: #1e222e;
+}
+
+.book-buying__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.book-buying__price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  margin-top: 78px;
+}
+
+.book-buying__price-rouble {
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #1e222e;
+}
+
+.book-buying__price-dollar {
+  font-size: 16px;
+  line-height: 1.375;
+  color: #afb2c4;
+}
+
+.book-buying__img {
+  margin-left: auto;
+}
+
+.book-buying__btn {
+  display: inline-block;
+  width: calc(100% / 2 - 10px);
+  padding: 15px 0;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #e55241;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-buying__btn + .book-buying__btn {
+  margin-left: 10px;
+}
+
+.book-buying__btn--normal {
+  background-color: #e55241;
+  color: #ffffff;
+}
+
+.book-buying__btn--inverted {
+  background-color: transparent;
+  color: #e55241;
+}
+
+.hashtags__heading {
+  color: #e55241;
+  margin-bottom: 20px;
+}
+
+.hashtags__list {
+  font-size: 10px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1e222e;
+}
+
+.hashtags__element {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  border: 1px dashed #e55241;
+  border-radius: 100px;
+  background-color: #fff6f6;
+}
+
+.hashtags__element:not(:last-child) {
+  margin-right: 6px;
+}
+
+.hashtags__element--current {
+  background-color: #e55241;
+  color: #ffffff;
+}
+
+.latets-news {
+  color: #1e222e;
+}
+
+.latets-news__heading {
+  margin-bottom: 20px;
+}
+
+.latest-news__element {
+  margin-bottom: 10px;
+}
+
+.latest-news__element:last-child {
+  margin-bottom: 0;
+}
+
+.latest-news__element > svg {
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  fill: #e55241;
+}
+
+.latest-news__element a {
+  color: inherit;
+}
+
+.latest-news__element a:hover, .latest-news__element a:focus {
+  color: #e55241;
+}
+
+.more-articles {
+  padding: 30px 0 30px 15px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.more-articles__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more-articles__element:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.more-articles__text {
+  width: 50%;
+  margin-left: 15px;
+  color: #1e222e;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
@@ -399,6 +567,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   background-color: #ffffff;
+  color: #3a3e48;
 }
 
 .container {
@@ -1473,5 +1642,99 @@ body {
 
 .popular--bg-color {
   background-color: #f7f7f7;
+}
+
+.article {
+  padding: 40px 0;
+}
+
+.article__heading {
+  margin-bottom: 20px;
+}
+
+.article__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.article__meta > :not(:last-child) {
+  margin-right: 20px;
+}
+
+.bookmarks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.bookmarks__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating > svg:last-of-type {
+  margin-right: 10px;
+}
+
+.rating__star {
+  --star-active: #fadb14;
+  --star-inactive: rgba(0, 0, 0, 0.04);
+  width: 16px;
+  height: 16px;
+  fill: var(--star-inactive);
+}
+
+.rating__star--active {
+  fill: var(--star-active);
+}
+
+.article .img-thumb {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.article__subheading {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #1e222e;
+}
+
+.article__text {
+  margin-bottom: 15px;
+}
+
+.article__text a {
+  color: #e55241;
+}
+
+.book-buying.article__margin {
+  margin: 40px 0;
+}
+
+.article__section .hashtags,
+.article__section .latest-news,
+.article__section .chances {
+  margin-bottom: 40px;
+}
+
+.article__section .more-articles {
+  margin-bottom: 35px;
 }
 /*# sourceMappingURL=main.css.map */

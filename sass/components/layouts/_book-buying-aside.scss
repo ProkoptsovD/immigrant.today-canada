@@ -1,0 +1,81 @@
+.book-buying {
+  padding: 30px 15px;
+
+  border-radius: 10px;
+
+  background-color: getColor(bg-hero);
+
+  &__heading {
+    margin-bottom: 15px;
+    @include font-preset(700, 18px, 27px);
+    color: getColor(headings);
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    color: getColor(headings);
+  }
+
+  &__price {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__price-wrapper {
+    display: flex;
+    align-items: center;
+
+    height: 45px;
+    margin-top: 78px;
+  }
+
+  &__price-rouble {
+    margin-right: 15px;
+    @include font-preset(700, 30px, 45px);
+
+    color: getColor(headings);
+  }
+
+  &__price-dollar {
+    font-size: 16px;
+    line-height: lineHeight(16px, 22px);
+
+    color: getColor(price-color);
+  }
+
+  &__img {
+    margin-left: auto;
+  }
+}
+
+//================buttons=========================//
+.book-buying__btn {
+  display: inline-block;
+  width: calc(100% / 2 - 10px);
+
+  padding: 15px 0;
+  margin: 0;
+
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+
+  border: 1px solid getColor(accent);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  &--normal {
+    background-color: getColor(accent);
+    color: #ffffff;
+  }
+
+  &--inverted {
+    background-color: transparent;
+    color: getColor(accent);
+  }
+}

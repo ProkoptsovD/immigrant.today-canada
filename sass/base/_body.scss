@@ -6,4 +6,5 @@ body {
   line-height: lineHeight($font-size, $line-height);
 
   background-color: #ffffff;
+  color: getColor(text-main);
 }

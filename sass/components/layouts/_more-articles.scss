@@ -1,0 +1,22 @@
+.more-articles {
+  padding: 30px 0 30px 15px;
+
+  border-radius: 10px;
+  background-color: getColor(bg-sections-color);
+
+  &__element {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    margin-left: 15px;
+
+    color: getColor(headings);
+  }
+}
