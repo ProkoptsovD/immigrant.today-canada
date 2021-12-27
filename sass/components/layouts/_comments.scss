@@ -1,0 +1,146 @@
+.comments {
+  padding-top: 24px;
+
+  border-top: 2px solid getColor(form-color);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__headings {
+    @include font-preset(700, 18px, 28px);
+    color: getColor(headings);
+  }
+
+  &__btn {
+    display: block;
+    padding: 15px 42.5px;
+
+    @extend %button;
+    font-size: 14px;
+    line-height: lineHeight(14px, 20px);
+  }
+
+  &__element {
+    padding-bottom: 16px;
+    border-bottom: 2px solid getColor(form-color);
+
+    &:not(:first-child) {
+      padding-top: 16px;
+    }
+  }
+}
+
+//=================comments section styles==================//
+.comments__element-user {
+  display: flex;
+
+  margin-bottom: 15px;
+}
+
+.comments__element-meta {
+  margin-left: 10px;
+}
+
+.comments__element-name,
+.comments__element-date {
+  display: block;
+}
+
+.comments__element-name {
+  @include font-preset(700, 16px, 24px);
+  color: getColor(headings);
+}
+
+.comments__element-date {
+  font-size: 12px;
+  line-height: lineHeight(12px, 18px);
+}
+
+.comments__element-box {
+  display: flex;
+}
+
+.comments__element-comment {
+  margin-right: 32px;
+
+  margin-bottom: 15px;
+}
+
+.comments__element-like {
+  display: inline-flex;
+  @include font-preset(700, 12px, 18px);
+  color: getColor(accent);
+}
+
+.comments__element-like-icon {
+  width: 18px;
+  height: 18px;
+
+  margin-right: 7px;
+
+  fill: #ffe1dd;
+}
+
+//================reply btn styles==================//
+.comments__reply-btn {
+  display: inline;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: inherit;
+  @include font-preset(600, 10px, 15px);
+  text-transform: uppercase;
+
+  border: none;
+  background-color: transparent;
+
+  color: getColor(accent);
+}
+
+//===================reply icon style==============//
+.comments__element-reply-icon-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-left: 8px;
+
+  color: getColor(form-placeholder-color);
+
+  & > span {
+    font-size: 12px;
+    line-height: lineHeight(12px, 18px);
+
+    color: currentColor;
+  }
+}
+
+.comments__element-reply-icon {
+  width: 10px;
+  height: 10px;
+
+  fill: currentColor;
+}
+
+//==================appearence of replied comment=====================//
+//deletes bottom border if comment is replied
+.comments__element.replied {
+  border-bottom: none;
+}
+
+.comments__element.comments__element--replied {
+  margin-left: 10px;
+  margin-bottom: 15px;
+
+  padding-left: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  border-left: 1px solid getColor(form-color);
+  border-bottom: none;
+}
