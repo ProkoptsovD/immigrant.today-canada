@@ -1,0 +1,32 @@
+.container.container--padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.comments__wrapper--margin {
+  margin-bottom: 30px;
+}
+
+.comment__form {
+  margin-bottom: 40px;
+}
+
+.comment__input {
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 20px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #dbdfec;
+  border-radius: 10px;
+
+  &::placeholder {
+    color: getColor(form-placeholder-color);
+  }
+}
+
+.comments__btn.is-active {
+  background-color: getColor(bg-hero);
+  color: getColor(form-placeholder-color);
+}

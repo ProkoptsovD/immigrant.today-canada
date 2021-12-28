@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <div class="container container--padding">
+        <aside class="comments">
+            <div class="comments__wrapper comments__wrapper--margin">
+                <h4 class="comments__heading">
+                    Комментарии (3)
+                </h4>
+                <button class="comments__btn is-active" type="button" aria-label="Добавить комментарий">
+                    Добавить
+                </button>
+            </div>
+
+            <form class="comment__form" for="comment">
+                <textarea class="comment__input" name="comment" id="comment" cols="40" rows="10" placeholder="Комментарий"></textarea>
+                
+                <button class="comments__btn" type="button" aria-label="Отправить комментарий">
+                    Отправить
+                </button>
+            </form>
+        
+            <ul class="comments__list">
+                <li class="comments__element">
+                    <div class="comments__element-user">
+                        <img src="./images/users-avatars/user-01.jpg" alt="Фото пользователя">
+                        <p class="comments__element-meta">
+                            <span class="comments__element-name">Николай Молчан</span>
+                            <span class="comments__element-date">4 дня назад 00:29</span>
+                        </p>
+                    </div>
+                    <div class="comments__element-box">
+                        <p class="comments__element-comment">
+                            Душа моя озарена неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца?
+                            Душа моя озарена
+                            неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца
+                        </p>
+                        <span class="comments__element-like">
+                            <svg class="comments__element-like-icon">
+                                <use href="./images/icons.svg#heart"></use>
+                            </svg>
+                            1
+                        </span>
+                    </div>
+                    <button class="comments__reply-btn" type="button" aria-label="Ответить на комментарий пользователя">
+                        Ответить
+                    </button>
+                </li>
+        
+                <li class="comments__element replied">
+                    <div class="comments__element-user">
+                        <img src="./images/users-avatars/user-02.jpg" alt="Фото пользователя">
+                        <p class="comments__element-meta">
+                            <span class="comments__element-name">Людмила Фролова</span>
+                            <span class="comments__element-date">4 дня назад 00:29</span>
+                        </p>
+                    </div>
+                    <div class="comments__element-box">
+                        <p class="comments__element-comment">
+                            Душа моя озарена неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца?
+                            Душа
+                            моя озарена
+                            неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца
+                        </p>
+                        <span class="comments__element-like">
+                            <svg class="comments__element-like-icon">
+                                <use href="./images/icons.svg#heart"></use>
+                            </svg>
+                            1
+                        </span>
+                    </div>
+                    <button class="comments__reply-btn" type="button" aria-label="Ответить на комментарий пользователя">
+                        Ответить
+                    </button>
+                </li>
+        
+                <li class="comments__element comments__element--replied">
+                    <div class="comments__element-user">
+                        <img src="./images/users-avatars/user-03.jpg" alt="Фото пользователя">
+                        <p class="comments__element-meta">
+                            <span class="comments__element-name">Василий Смирнов</span>
+                            <span class="comments__element-date">4 дня назад 00:29</span>
+                        </p>
+                        <div class="comments__element-reply-icon-wrapper">
+                            <svg class="comments__element-reply-icon">
+                                <use href="./images/icons.svg#reply"></use>
+                            </svg>
+                            <span>Людмила Фролова</span>
+                        </div>
+                    </div>
+                    <div class="comments__element-box">
+                        <p class="comments__element-comment">
+                            Душа моя озарена неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца?
+                            Душа
+                            моя озарена
+                            неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца
+                        </p>
+                        <span class="comments__element-like">
+                            <svg class="comments__element-like-icon">
+                                <use href="./images/icons.svg#heart"></use>
+                            </svg>
+                            1
+                        </span>
+                    </div>
+                    <button class="comments__reply-btn" type="button" aria-label="Ответить на комментарий пользователя">
+                        Ответить
+                    </button>
+                </li>
+                <li class="comments__element comments__element--replied">
+                    <div class="comments__element-user">
+                        <img src="./images/users-avatars/user-04.jpg" alt="Фото пользователя">
+                        <p class="comments__element-meta">
+                            <span class="comments__element-name">Эдуард Белов</span>
+                            <span class="comments__element-date">4 дня назад 00:29</span>
+                        </p>
+                        <div class="comments__element-reply-icon-wrapper">
+                            <svg class="comments__element-reply-icon">
+                                <use href="./images/icons.svg#reply"></use>
+                            </svg>
+                            <span>Людмила Фролова</span>
+                        </div>
+                    </div>
+                    <div class="comments__element-box">
+                        <p class="comments__element-comment">
+                            Душа моя озарена неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца?
+                        </p>
+                        <span class="comments__element-like">
+                            <svg class="comments__element-like-icon">
+                                <use href="./images/icons.svg#heart"></use>
+                            </svg>
+                            1
+                        </span>
+                    </div>
+                    <button class="comments__reply-btn" type="button" aria-label="Ответить на комментарий пользователя">
+                        Ответить
+                    </button>
+                </li>
+        
+                <li class="comments__element">
+                    <div class="comments__element-user">
+                        <img src="./images/users-avatars/user-05.jpg" alt="Фото пользователя">
+                        <p class="comments__element-meta">
+                            <span class="comments__element-name">Влад Крылов</span>
+                            <span class="comments__element-date">4 дня назад 00:29</span>
+                        </p>
+                    </div>
+                    <div class="comments__element-box">
+                        <p class="comments__element-comment">
+                            Душа моя озарена неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца?
+                            Душа
+                            моя озарена
+                            неземной радостью, как эти чудесные утра,которыми я наслаждаюсь от всего сердца
+                        </p>
+                        <span class="comments__element-like">
+                            <svg class="comments__element-like-icon">
+                                <use href="./images/icons.svg#heart"></use>
+                            </svg>
+                            1
+                        </span>
+                    </div>
+                    <button class="comments__reply-btn" type="button" aria-label="Ответить на комментарий пользователя">
+                        Ответить
+                    </button>
+                </li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
