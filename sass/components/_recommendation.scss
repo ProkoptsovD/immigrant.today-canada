@@ -85,21 +85,19 @@
   &:focus {
     background-color: getColor(bg-while-hover);
   }
-}
 
-.aside__element:hover::before,
-.aside__element:focus::before {
-  display: block;
-  content: "";
+  &::before {
+    display: block;
+    content: "";
 
-  width: 1px;
-  background-color: getColor(accent);
-  visibility: visible;
-}
+    width: 2px;
+    background-color: transparent;
+  }
 
-.aside__element:hover::before:not(:hover),
-.aside__element:focus::before:not(:focus) {
-  visibility: hidden;
+  &:hover::before,
+  &:focus::before {
+    background-color: getColor(accent);
+  }
 }
 
 .aside__link {

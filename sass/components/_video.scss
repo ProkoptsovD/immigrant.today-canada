@@ -1,0 +1,68 @@
+.video {
+  padding: 20px 15px;
+
+  box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
+    5px 5px 10px rgba(190, 190, 190, 0.25);
+  border-radius: 10px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+  }
+
+  &__heading {
+    @include font-preset(700, 18px, 28px);
+
+    color: getColor(headings);
+  }
+
+  &__embeded {
+    margin-bottom: 15px;
+
+    border-radius: 10px 10px 9px 0px;
+  }
+
+  &__text {
+    color: getColor(headings);
+    margin-bottom: 15px;
+  }
+}
+
+//==================youtube button=========================//
+
+.youtube {
+  display: flex;
+  align-items: center;
+
+  padding-left: 5px;
+
+  background-color: #e62117;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: #ffffff;
+  }
+
+  & span {
+    margin: 0 7px;
+    @include font-preset(600, 12px, 18px);
+    color: #ffffff;
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+
+    height: 100%;
+
+    @include font-preset(600, 12px, 18px);
+
+    background-color: #ffffff;
+    color: getColor(price-color);
+  }
+}

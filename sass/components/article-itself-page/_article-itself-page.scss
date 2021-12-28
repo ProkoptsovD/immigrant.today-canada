@@ -93,7 +93,8 @@
   margin-bottom: 40px;
 }
 
-.article__section .more-articles {
+.article__section .more-articles,
+.article__section .important {
   margin-bottom: 35px;
 }
 
@@ -104,4 +105,8 @@
 .article__section .questions,
 .article__section .similar {
   margin-bottom: 30px;
+}
+
+.similar + .video {
+  margin-bottom: 33px;
 }
