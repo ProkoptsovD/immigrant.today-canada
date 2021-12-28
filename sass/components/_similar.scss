@@ -1,0 +1,54 @@
+.similar {
+  padding: 20px 13px 20px 15px;
+
+  box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
+    5px 5px 10px rgba(190, 190, 190, 0.25);
+  border-radius: 10px;
+
+  &__wrapper {
+    @extend %headings-wrapper;
+    margin-bottom: 24px;
+  }
+
+  &__headings {
+    @include font-preset(700, 18px, 24px);
+  }
+
+  &__list {
+    background-color: #f3f3f3;
+  }
+
+  &__element {
+    padding-bottom: 10px;
+    padding-top: 18px;
+
+    background-color: #ffffff;
+
+    &:not(:last-child) {
+      margin-bottom: 1px;
+    }
+  }
+
+  &__element-link {
+    display: flex;
+    align-items: center;
+
+    color: getColor(headings);
+
+    &:hover,
+    &:focus {
+      color: getColor(accent);
+    }
+  }
+
+  &__element-thumb {
+    flex-basis: 30%;
+  }
+
+  &__element-text {
+    flex-basis: 70%;
+    margin-left: 10px;
+
+    color: inherit;
+  }
+}

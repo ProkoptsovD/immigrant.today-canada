@@ -314,7 +314,7 @@ textarea {
   color: #1e222e;
 }
 
-.popular__wrapper, .immigration__wrapper, .aside__wrapper, .study__wrapper, .job__wrapper, .visa__wrapper {
+.popular__wrapper, .immigration__wrapper, .aside__wrapper, .study__wrapper, .job__wrapper, .visa__wrapper, .similar__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,6 +706,10 @@ textarea {
   padding-bottom: 0;
   border-left: 1px solid #dbdfec;
   border-bottom: none;
+}
+
+.questions {
+  padding: 20px 15px;
 }
 
 body {
@@ -1448,6 +1452,31 @@ body {
   line-height: 1.42857;
 }
 
+.questions {
+  padding: 20px 15px;
+  -webkit-box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+          box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+  border-radius: 10px;
+}
+
+.questions__heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #1e222e;
+}
+
+.questions__wrapper {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.questions__text {
+  color: #1e222e;
+  margin-bottom: 15px;
+}
+
 .footer {
   background-color: #272727;
 }
@@ -1884,5 +1913,71 @@ body {
 
 .article__section .more-articles {
   margin-bottom: 35px;
+}
+
+.more-articles + .comments {
+  margin-bottom: 70px;
+}
+
+.article__section .questions,
+.article__section .similar {
+  margin-bottom: 30px;
+}
+
+.similar {
+  padding: 20px 13px 20px 15px;
+  -webkit-box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+          box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+  border-radius: 10px;
+}
+
+.similar__wrapper {
+  margin-bottom: 24px;
+}
+
+.similar__headings {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+}
+
+.similar__list {
+  background-color: #f3f3f3;
+}
+
+.similar__element {
+  padding-bottom: 10px;
+  padding-top: 18px;
+  background-color: #ffffff;
+}
+
+.similar__element:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.similar__element-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1e222e;
+}
+
+.similar__element-link:hover, .similar__element-link:focus {
+  color: #e55241;
+}
+
+.similar__element-thumb {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.similar__element-text {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  margin-left: 10px;
+  color: inherit;
 }
 /*# sourceMappingURL=main.css.map */

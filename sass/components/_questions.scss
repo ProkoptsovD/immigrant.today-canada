@@ -1,0 +1,25 @@
+.questions {
+  padding: 20px 15px;
+
+  box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
+    5px 5px 10px rgba(190, 190, 190, 0.25);
+  border-radius: 10px;
+
+  &__heading {
+    margin-bottom: 20px;
+
+    @include font-preset(700, 18px, 24px);
+
+    color: getColor(headings);
+  }
+
+  &__wrapper {
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  &__text {
+    color: getColor(headings);
+    margin-bottom: 15px;
+  }
+}

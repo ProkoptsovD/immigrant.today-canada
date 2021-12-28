@@ -96,3 +96,12 @@
 .article__section .more-articles {
   margin-bottom: 35px;
 }
+
+.more-articles + .comments {
+  margin-bottom: 70px;
+}
+
+.article__section .questions,
+.article__section .similar {
+  margin-bottom: 30px;
+}
