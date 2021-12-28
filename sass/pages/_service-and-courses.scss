@@ -1,0 +1,117 @@
+.service-and-courses {
+  padding-top: 40px;
+
+  &__heading {
+    @extend %section-headings;
+
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: lineHeight(16px, 24px);
+
+    margin-bottom: 40px;
+  }
+}
+
+.service__heading {
+  @include font-preset(700, 18px, 24px);
+
+  margin-bottom: 20px;
+}
+
+//=======cards============================//
+
+.service-card {
+  display: block;
+
+  &__element {
+    display: block;
+
+    &:first-child .service-card__box {
+      margin-top: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//=================CARDS styles=========================//
+.service-card__element {
+  position: relative;
+
+  border: 1px solid #dbdfec;
+  border-radius: 10px 10px 4px 4px;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25),
+      5px 5px 10px rgba(190, 190, 190, 0.25);
+  }
+}
+
+.service-card__title {
+  @extend %card-titles;
+  margin-bottom: 5px;
+}
+
+.service-card__wrapper {
+  padding: 15px 15px 20px 15px;
+}
+
+.service-card__box {
+  display: flex;
+  margin-top: 60px;
+}
+
+.service-card__rouble {
+  display: block;
+
+  @include font-preset(700, 24px, 36px);
+  margin-right: 10px;
+}
+
+.service-card__dollar {
+  display: block;
+
+  @include font-preset(400, 12px, 18px);
+
+  color: getColor(price-color);
+}
+
+.service-card__btn {
+  @extend %button;
+  width: 50%;
+
+  margin-left: auto;
+  padding: 10px 0;
+}
+
+.service-card__special {
+  position: absolute;
+  left: 15px;
+  bottom: 58%;
+
+  display: inline-block;
+  padding: 5px 10px;
+
+  @include font-preset(600, 10px, 15px);
+  text-transform: uppercase;
+
+  border-radius: 4px;
+
+  background-color: rgba(229, 82, 65, 0.7);
+  color: #ffffff;
+}
+
+.service-card__wrapper > a:hover .service-card__title,
+.service-card__wrapper > a:focus .service-card__title {
+  color: getColor(accent);
+}
