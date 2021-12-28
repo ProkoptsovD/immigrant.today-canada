@@ -110,3 +110,9 @@
 .similar + .video {
   margin-bottom: 33px;
 }
+
+//===============popular section styles=================//
+.article__section + .popular {
+  padding-top: 35px;
+  background-color: getColor(bg-sections-color);
+}

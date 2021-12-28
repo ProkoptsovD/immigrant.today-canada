@@ -961,6 +961,7 @@ body {
   position: relative;
   border: 1px solid #dbdfec;
   border-radius: 10px 10px 4px 4px;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -1924,6 +1925,11 @@ body {
 
 .similar + .video {
   margin-bottom: 33px;
+}
+
+.article__section + .popular {
+  padding-top: 35px;
+  background-color: #f7f7f7;
 }
 
 .similar {
