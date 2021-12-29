@@ -291,7 +291,7 @@ textarea {
   resize: none;
 }
 
-.checkbox__input, .section-title {
+.checkbox__input, .section-title, .books__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -302,7 +302,7 @@ textarea {
   overflow: hidden;
 }
 
-.popular__heading, .immigration__heading, .aside__heading, .study__heading, .job__heading, .visa__heading, .about__heading, .join__heading, .migrate-to-canada__heading, .service-and-courses__heading {
+.popular__heading, .immigration__heading, .aside__heading, .study__heading, .job__heading, .visa__heading, .about__heading, .join__heading, .migrate-to-canada__heading, .services__heading {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.36364;
@@ -2172,18 +2172,22 @@ body {
   color: #a6a6a6;
 }
 
-.service-and-courses {
+.services {
   padding-top: 40px;
 }
 
-.service-and-courses__heading {
+.services__heading {
   margin-bottom: 30px;
 }
 
-.service-and-courses__text {
+.services__text {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 40px;
+}
+
+.service {
+  padding-bottom: 35px;
 }
 
 .service__heading {
@@ -2277,5 +2281,52 @@ body {
 .service-card__wrapper > a:hover .service-card__title,
 .service-card__wrapper > a:focus .service-card__title {
   color: #e55241;
+}
+
+.courses {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #f4f4f4;
+}
+
+.courses__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  margin-bottom: 20px;
+}
+
+.service-card__rouble.courses__price,
+.service-card__dollar.courses__price {
+  display: none;
+}
+
+.service-card__box.courses__meta {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courses__price-free {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1e222e;
+}
+
+.books {
+  padding: 35px 0;
+}
+
+.books__heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #1e222e;
+}
+
+.service-card__element.books__element {
+  padding-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

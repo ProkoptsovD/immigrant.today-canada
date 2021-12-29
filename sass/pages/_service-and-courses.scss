@@ -1,4 +1,4 @@
-.service-and-courses {
+.services {
   padding-top: 40px;
 
   &__heading {
@@ -15,10 +15,14 @@
   }
 }
 
-.service__heading {
-  @include font-preset(700, 18px, 24px);
+.service {
+  padding-bottom: 35px;
 
-  margin-bottom: 20px;
+  &__heading {
+    @include font-preset(700, 18px, 24px);
+
+    margin-bottom: 20px;
+  }
 }
 
 //=======cards============================//
@@ -114,4 +118,54 @@
 .service-card__wrapper > a:hover .service-card__title,
 .service-card__wrapper > a:focus .service-card__title {
   color: getColor(accent);
+}
+
+//=======================courses section styles===============//
+.courses {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  background-color: getColor(bg-hero);
+
+  &__heading {
+    @include font-preset(700, 18px, 24px);
+
+    margin-bottom: 20px;
+  }
+}
+
+.service-card__rouble.courses__price,
+.service-card__dollar.courses__price {
+  display: none;
+}
+
+.service-card__box.courses__meta {
+  align-items: center;
+}
+
+.courses__price-free {
+  @include font-preset(700, 24px, 36px);
+
+  color: getColor(headings);
+}
+
+//====================books section=======================//
+.books {
+  padding: 35px 0;
+
+  &__title {
+    @extend %visually-hidden;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+
+    @include font-preset(700, 18px, 28px);
+
+    color: getColor(headings);
+  }
+}
+
+.service-card__element.books__element {
+  padding-top: 20px;
 }
