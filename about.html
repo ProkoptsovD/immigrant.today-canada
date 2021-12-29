@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__element">
+                            <a class="header__link" href="#">О проекте</a>
+                        </li>
+        
+                        <li class="menu__element">
+                            <a class="header__link" href="#">Вакансии</a>
+                        </li>
+        
+                        <li class="menu__element">
+                            <a class="header__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="menu__auth">
+                        <li class="menu__element">Погода</li>
+                        <li class="menu__element">Язык</li>
+                        <li class="menu__element">Мой аккаунт</li>
+                    </ul>
+                </div>
+        
+                <div class="header__mobile">
+                    <button class="menu-mobile-btn" type="button" aria-label="Открыть мобильное меню">
+                        <svg class="menu-mobile-btn__icons" width="32px" height="32px">
+        
+                            <use class="menu-mobile-btn__icon-menu" href="./images/icons.svg#mobile-menu"></use>
+                            <use class="menu-mobile-btn__icon-cross" href="./images/icons.svg#icross"></use>
+                        </svg>
+                    </button>
+        
+                    <a class="header__logo" href="#">
+                        <img src="./images/logo.svg" alt="Логотип компании Immigrant.Today">
+                    </a>
+        
+                    <nav class="navbar">
+                        <ul class="navbar__catalogue">
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Иммиграция
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Учеба
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Работа
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Визы
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Услуги и курсы
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <button class="search-btn" type="button" aria-label="Поиск по сайту">
+        
+                            <svg class="search-btn__icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#magnifying"></use>
+                            </svg>
+                        </button>
+        
+                        <button class="auth-btn" type="button" aria-label="Авторизоваться на сайте">
+        
+                            <svg class="auth-btn__icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#user"></use>
+                            </svg>
+                        </button>
+        
+        
+                        <button class="header__btn">Оценить шансы</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="about-project">
+                <div class="container">
+                    <h2 class="about-project__title">
+                        О проекте Immigrant.Today
+                    </h2>
+                    <p class="about-project__text">
+                        Иммигрант.Сегодня – это информационный портал, который помогает людям иммигрировать и адаптироваться (обжиться) в
+                        Канаде.
+                    </p>
+
+                    <picture>
+                        <source srcset="./images/about-project/mobile/webp/w-about-project-01@1x.webp 1x, ./images/about-project/mobile/webp/w-about-project-01@2x.webp 2x, ./images/about-project/mobile/webp/w-about-project-01@3x.webp 3x" 
+                                type="image/webp">
+                        <source srcset="./images/about-project/mobile/jpg/about-project-01@1x.jpg 1x, ./images/about-project/mobile/jpg/about-project-01@2x.jpg 2x, ./images/about-project/mobile/jpg/about-project-01@3x.jpg 3x" 
+                                type="image/jpg">
+
+                        <img src="./images/about-project/mobile/jpg/about-project-01@1x.jpg" alt="Основатели компании Immigrant.Today">
+                    </picture>
+
+                    <ul class="about-project__chapters">
+                        <li class="about-project__chapters-item">
+                            <div class="about-project__heading-wrapper">
+                                <svg>
+                                    <use href="./images/icons.svg#quill-pen"></use>
+                                </svg>
+                                <h3 class="about-project__heading">
+                                    История создания проекта
+                                </h3>
+                            </div>
+                            
+                            <p class="about-project__text">
+                                Основатель портала Алекс Павленко вместе со своей семьей прошел непростой путь, прежде чем попасть в Канаду. Сначала
+                                семья переехала в Киев из украинского провинциального городка, затем в Польшу по программе бизнес-иммиграции, и
+                                только
+                                после этого в Канаду. Иммиграционный процесс в Канаду занял более 5 лет.
+                            </p>
+                            <p class="about-project__text">
+                                Проект Immigrant.Today запустился в 2015 году. Он начинался с подборки YouTube-каналов на тему эмиграции и их
+                                транскрибации (текстовые версии видео). Со временем на сайте стали публиковать эксклюзивные материалы о том, как
+                                получить визу в Канаду, по какой программе легче иммигрировать, как подобрать первую работу в новой стране и многое
+                                другое. Кроме того, появилась новостная лента и тематические статьи о жизни в иммиграции и последующей адаптации.
+                            </p>
+                            <p class="about-project__text">
+                                Иванна Павленко — супруга Алекса — стала лицензированным канадским иммиграционным консультантом и сейчас помогает
+                                людям
+                                осуществить свою мечту и переехать в Канаду.
+                            </p>
+                        </li>
+
+                        <li class="about-project__chapters-item">
+                            <div class="about-project__heading-wrapper">
+                                <svg>
+                                    <use href="./images/icons.svg#lamp"></use>
+                                </svg>
+                                <h3 class="about-project__heading">
+                                    Наша специализация
+                                </h3>
+
+                                <p class="about-project__text">
+                                    Мы специализируемся на Канаде, другие страны тоже хороши, но Канада все равно лучше.
+                                </p>
+
+                                <p class="about-project__quote">
+                                    <svg>
+                                        <use href="./images/icons.svg#qoutes"></use>
+                                    </svg>
+
+                                    В 2021 году Канада заняла первое место в рейтинге лучших стран мира.
+                                </p>
+
+                                <p class="about-project__text">
+                                    На сайте Immigrant.Today вы можете оценить ваши шансы для переезда в Канаду и в дальнейшем пройти с нами все шаги
+                                    иммиграции. Также мы рассказываем о быте, поиске работы, медицине, недвижимости, образовании и других важных аспектах
+                                    жизни за границей.
+                                </p>
+                                <p class="about-project__text">
+                                    Наш проект — для тех людей, которые хотят изменить свою жизнь к лучшему: обрести стабильность, получать достойную
+                                    зарплату, быть уверенным в будущем своих детей. Также мы публикуем полезную информацию для тех, кто уже иммигрировал и
+                                    начал новую жизнь в незнакомой стране.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="about-project__chapters-item">
+                            <div class="about-project__heading-wrapper">
+                                <svg>
+                                    <use href="./images/icons.svg#writing"></use>
+                                </svg>
+                                <h3 class="about-project__heading">
+                                    Цель проекта
+                                </h3>
+                            </div>
+
+                            <p class="about-project__text">
+                                У нас накопилось много информации на тему эмиграции, секретов, лайфхаков, которыми мы хотим делиться. Наша цель состоит
+                                в том, чтобы помочь людям получить необходимую информацию, правдиво и доступно рассказать о сложном на первый взгляд
+                                иммиграционном процессе. Мы помогаем собрать и подать документы, рассказываем о жизни в Канаде и возможностях, которыми
+                                нужно пользоваться.
+                            </p>
+                        </li>
+
+                        <li class="about-project__chapters-item">
+                            <div class="about-project__heading-wrapper">
+                                <svg>
+                                    <use href="./images/icons.svg#copyright"></use>
+                                </svg>
+                                <h3 class="about-project__heading">
+                                    Структура сайта
+                                </h3>
+                            </div>
+
+                            <p class="about-project__text">
+                                Портал можно разбирать на несколько частей: сам 
+                                <a class="about-project__link" href=".index.html">сайт</a>, новостная рассылка по электронной почте (требуется 
+                                <a class="about-project__link" href="#">регистрация</a>), 
+                                <a class="about-project__link" href="https://www.youtube.com/channel/UCPvcUzYGik49O8hZReEl-Ag">YouTube-канал</a>, страница в 
+                                <a class="about-project__link" href="#">Facebook</a> и 
+                                <a class="about-project__link" href="#">ВКонтакте</a>, 
+                                <a class="about-project__link" href="#">Telegram-канал</a>, 
+                                <a class="about-project__link" href="#">Яндекс.Дзен</a>, а также 
+                                <a class="about-project__link" href="#">Instagram</a>.
+                            </p>
+                        </li>
+
+                        <li class="about-project__chapters-item">
+                            <div class="about-project__heading-wrapper">
+                                <svg>
+                                    <use href="./images/icons.svg#megaphone"></use>
+                                </svg>
+                                <h3 class="about-project__heading">
+                                    Наши контакты
+                                </h3>
+                            </div>
+
+                            <p class="about-project__text">
+                                Связаться с нами лучше всего по электронной почте 
+                                <a class="about-project__link" href="mailto:mail@immigrant.today">mail@immigrant.today</a>.
+                                Можно также оставить сообщение и комментарии в любой из наших соцсетей.
+                            </p>
+                        </li>
+
+                        <li class="about-project__chapters-item">
+                            <div class="about-project__heading-wrapper">
+                                <svg>
+                                    <use href="./images/icons.svg#like"></use>
+                                </svg>
+                                <h3 class="about-project__heading">
+                                    Наши ценности
+                                </h3>
+
+                                <ul class="about-project__values">
+                                    <li class="about-project__values-item">
+                                        <svg>
+                                            <use href="./images/icons.svg#maple"></use>
+                                        </svg>
+                                        Мы понимаем мотивы и трудности, возникающие у наших читателей, ведь мы и сами шли аналогичным путем. Мы пишем для людей,
+                                        близких нам по духу, людей, решивших изменить свою жизнь. И наша цель — помочь таким людям. Пусть не деньгами, хотя бы
+                                        информацией.
+                                    </li>
+                                    <li class="about-project__values-item">
+                                        <svg>
+                                            <use href="./images/icons.svg#maple"></use>
+                                        </svg>
+                                        Мы стараемся писать статьи “без воды” и проверять информацию, если берем ее из сторонних иностранных источников.
+                                    </li>
+                                    <li class="about-project__values-item">
+                                        <svg>
+                                            <use href="./images/icons.svg#maple"></use>
+                                        </svg>
+                                        Мы не обманываем своих читателей и не пользуемся уловками недобросовестных иммиграционных консультантов.
+                                    </li>
+                                    <li class="about-project__values-item">
+                                        <svg>
+                                            <use href="./images/icons.svg#maple"></use>
+                                        </svg>
+                                        Мы открыты новому и готовы экспериментировать, предлагая своим читателям наиболее удобные способы подачи контента.
+                                    </li>
+                                    <li class="about-project__values-item">
+                                        <svg>
+                                            <use href="./images/icons.svg#maple"></use>
+                                        </svg>
+                                        Мы не боимся конструктивной критики, и готовы выслушать вашу точку зрения.
+                                    </li>
+                                    <li class="about-project__values-item">
+                                        <svg>
+                                            <use href="./images/icons.svg#maple"></use>
+                                        </svg>
+                                        Мы стремимся публиковать свежую информацию и исчерпывающие данные для того, чтобы наши читатели вовремя и в полном
+                                        объеме получали всю необходимую им информацию.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="about-project__chapters-item">
+                            <div class="about-project__heading-wrapper">
+                                <svg>
+                                    <use href="./images/icons.svg#copyright-alt"></use>
+                                </svg>
+                                <h3 class="about-project__heading">
+                                    Легальность оказания услуг
+                                </h3>
+
+                                <p class="about-project__text">
+                                    По законам Канады любые платные консультации или услуги, связанные с иммиграцией, возможны только при наличии
+                                    специальной лицензии.
+                                </p>
+                                <p class="about-project__text">
+                                    Наша компания Reboot Your Life Immigration Services Corp. легально зарегистрирована в Канаде, а Иванна Павленко имеет
+                                    лицензию иммиграционного консультанта R706095. Ее вы можете 
+                                    <a class="about-project__link" href="#">проверить по ссылке</a>. До встречи в Канаде!
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__wraper">
+                    <a class="footer__logo" href="./index.html">
+                        <img src="./images/footer-logo.svg" alt="Логотип компании Immigrant.Today">
+                    </a>
+        
+                    <ul class="tabs tabs--bg-map">
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Иммиграция
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Учеба
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Работа
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Оценка шансов
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Тест английского
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Тест французского
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <ul class="tabs">
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">О проекте
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Услуги и курсы
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Каталог бизнесов
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Вакансии
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Блог
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Контакты
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <div class="socials">
+                        <ul class="socials__list">
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Facebook">
+                                        <use href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Vkontakte">
+                                        <use href="./images/icons.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Instagram">
+                                        <use href="./images/icons.svg#instagram-alt"></use>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Telegram">
+                                        <use href="./images/icons.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <a class="socials__youtube" href="#">
+                            <svg class="socials__icon socials__icon--bigger" aria-label="Youtube">
+                                <use href="./images/icons.svg#youtube"></use>
+                            </svg>
+                            <span>YouTube</span>
+                            <div>
+                                999+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="address__wrapper">
+                <div class="copyright">
+                    <span class="copyright__heading">&#169;2015-2021 Imigrant.Today</span>
+                    <a class="copyright__link" href="#">Условия использования</a>
+                    <a class="copyright__link" href="#">Политика конфиденциальности</a>
+                </div>
+        
+                <address class="address">
+                    <a class="address__link" href="mailto:mail@immigrant.today">mail@immigrant.today</a>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
