@@ -1,3 +1,105 @@
 .about-project {
-  padding: 40px 0 0 0;
+  padding: 40px 0 70px 0;
+
+  &__title {
+    margin-bottom: 30px;
+
+    @extend %section-headings;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    line-height: lineHeight(16px, 24px);
+
+    --margin {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__heading {
+    @include font-preset(700, 18px, 28px);
+
+    color: getColor(headings);
+  }
+}
+
+.about-project__chapters-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.about-project__heading-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  & > svg {
+    width: 28px;
+    height: 28px;
+
+    margin-right: 10px;
+
+    fill: getColor(accent);
+  }
+}
+
+//================qiute block styles========================//
+.about-project__quote {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  margin: 30px 0;
+  padding: 33px 15px 33px 45px;
+
+  border-left: 5px solid #468e87;
+
+  background-color: getColor(bg-sections-color);
+}
+
+.about-project__quote-icon {
+  position: absolute;
+  top: 21px;
+  left: 10px;
+
+  width: 24px;
+  height: 24px;
+
+  fill: #468e87;
+}
+
+//==============links style===========================//
+.about-project__link {
+  color: getColor(accent);
+}
+
+//======================our velues styles=======================//
+.about-project__values-item {
+  display: flex;
+
+  margin-bottom: 10px;
+
+  & > div {
+    width: 32px;
+  }
+
+  & svg {
+    width: 24px;
+    height: 24px;
+
+    margin-right: 8px;
+
+    fill: getColor(accent);
+  }
+}
+
+//====================have questions styles=====================//
+.aside__box.about-project__box {
+  padding: 30px 15px;
 }

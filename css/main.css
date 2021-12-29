@@ -302,7 +302,7 @@ textarea {
   overflow: hidden;
 }
 
-.popular__heading, .immigration__heading, .aside__heading, .study__heading, .job__heading, .visa__heading, .about__heading, .join__heading, .migrate-to-canada__heading, .services__heading {
+.popular__heading, .immigration__heading, .aside__heading, .study__heading, .job__heading, .visa__heading, .about__heading, .join__heading, .migrate-to-canada__heading, .services__heading, .about-project__title {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.36364;
@@ -2344,6 +2344,101 @@ body {
 }
 
 .about-project {
-  padding: 40px 0 0 0;
+  padding: 40px 0 70px 0;
+}
+
+.about-project__title {
+  margin-bottom: 30px;
+}
+
+.about-project__text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-project__text --margin {
+  margin-bottom: 30px;
+}
+
+.about-project__img {
+  margin-bottom: 40px;
+}
+
+.about-project__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #1e222e;
+}
+
+.about-project__chapters-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.about-project__heading-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-project__heading-wrapper > svg {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  fill: #e55241;
+}
+
+.about-project__quote {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+  padding: 33px 15px 33px 45px;
+  border-left: 5px solid #468e87;
+  background-color: #f7f7f7;
+}
+
+.about-project__quote-icon {
+  position: absolute;
+  top: 21px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: #468e87;
+}
+
+.about-project__link {
+  color: #e55241;
+}
+
+.about-project__values-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.about-project__values-item > div {
+  width: 32px;
+}
+
+.about-project__values-item svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  fill: #e55241;
+}
+
+.aside__box.about-project__box {
+  padding: 30px 15px;
 }
 /*# sourceMappingURL=main.css.map */
