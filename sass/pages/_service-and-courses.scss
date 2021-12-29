@@ -169,3 +169,22 @@
 .service-card__element.books__element {
   padding-top: 20px;
 }
+
+//==================online tools section styles=================//
+.online-tools {
+  padding: 35px 0;
+
+  background-color: getColor(bg-hero);
+
+  &__title {
+    @extend %visually-hidden;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+
+    @include font-preset(700, 18px, 28px);
+
+    color: getColor(headings);
+  }
+}

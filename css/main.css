@@ -291,7 +291,7 @@ textarea {
   resize: none;
 }
 
-.checkbox__input, .section-title, .books__title {
+.checkbox__input, .section-title, .books__title, .online-tools__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2328,5 +2328,18 @@ body {
 
 .service-card__element.books__element {
   padding-top: 20px;
+}
+
+.online-tools {
+  padding: 35px 0;
+  background-color: #f4f4f4;
+}
+
+.online-tools__heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #1e222e;
 }
 /*# sourceMappingURL=main.css.map */
