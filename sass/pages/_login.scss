@@ -1,0 +1,92 @@
+.authorization {
+  padding-top: 15px;
+  padding-bottom: 74px;
+}
+
+.login {
+  margin-top: 15px;
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid getColor(form-color);
+
+  &__title {
+    margin-bottom: 30px;
+
+    @extend %section-headings;
+    text-align: center;
+  }
+
+  .login__field {
+    display: block;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid getColor(form-color);
+    border-radius: 5px;
+
+    &::placeholder {
+      color: getColor(form-placeholder-color);
+    }
+  }
+
+  &__link {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 16px;
+    line-height: lineHeight(16px, 24px);
+
+    text-align: center;
+    text-decoration: underline;
+
+    color: getColor(accent);
+  }
+}
+
+.enter-btn--login {
+  margin-bottom: 20px;
+}
+
+//================signup block===========================//
+.signup {
+  padding-top: 40px;
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include font-preset(700, 18px, 24px);
+    text-align: center;
+
+    color: getColor(headings);
+  }
+
+  &__text {
+    margin-bottom: 25px;
+
+    text-align: center;
+    word-spacing: -4px;
+  }
+}
+
+.enter-btn--signup {
+  border: 1px solid getColor(accent);
+
+  color: getColor(accent);
+  background-color: #ffffff;
+}

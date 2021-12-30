@@ -302,7 +302,7 @@ textarea {
   overflow: hidden;
 }
 
-.popular__heading, .immigration__heading, .aside__heading, .study__heading, .job__heading, .visa__heading, .about__heading, .join__heading, .migrate-to-canada__heading, .services__heading, .about-project__title {
+.popular__heading, .immigration__heading, .aside__heading, .study__heading, .job__heading, .visa__heading, .about__heading, .join__heading, .migrate-to-canada__heading, .services__heading, .about-project__title, .login__title {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.36364;
@@ -390,6 +390,45 @@ textarea {
 
 .more-btn__icon:active {
   fill: #0c60ba;
+}
+
+.back-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #afb2c4;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.back-btn__icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  fill: #afb2c4;
+}
+
+.enter-btn {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+  background-color: #e55241;
+  color: #ffffff;
 }
 
 .book-buying {
@@ -2575,5 +2614,98 @@ body {
 
 .join.access-denied__join {
   padding-top: 0;
+}
+
+.authorization {
+  padding-top: 15px;
+  padding-bottom: 74px;
+}
+
+.login {
+  margin-top: 15px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dbdfec;
+}
+
+.login__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login .login__field {
+  display: block;
+  width: 100%;
+}
+
+.login .login__field:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.login .login__field:last-child {
+  margin-bottom: 20px;
+}
+
+.login__input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dbdfec;
+  border-radius: 5px;
+}
+
+.login__input::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+
+.login__input:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+
+.login__input::-ms-input-placeholder {
+  color: #a6a6a6;
+}
+
+.login__input::placeholder {
+  color: #a6a6a6;
+}
+
+.login__link {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: underline;
+  color: #e55241;
+}
+
+.enter-btn--login {
+  margin-bottom: 20px;
+}
+
+.signup {
+  padding-top: 40px;
+}
+
+.signup__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #1e222e;
+}
+
+.signup__text {
+  margin-bottom: 25px;
+  text-align: center;
+  word-spacing: 1px;
+}
+
+.enter-btn--signup {
+  border: 1px solid #e55241;
+  color: #e55241;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти в учетную запись</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__element">
+                            <a class="header__link" href="#">О проекте</a>
+                        </li>
+        
+                        <li class="menu__element">
+                            <a class="header__link" href="#">Вакансии</a>
+                        </li>
+        
+                        <li class="menu__element">
+                            <a class="header__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="menu__auth">
+                        <li class="menu__element">Погода</li>
+                        <li class="menu__element">Язык</li>
+                        <li class="menu__element">Мой аккаунт</li>
+                    </ul>
+                </div>
+        
+                <div class="header__mobile">
+                    <button class="menu-mobile-btn" type="button" aria-label="Открыть мобильное меню">
+                        <svg class="menu-mobile-btn__icons" width="32px" height="32px">
+        
+                            <use class="menu-mobile-btn__icon-menu" href="./images/icons.svg#mobile-menu"></use>
+                            <use class="menu-mobile-btn__icon-cross" href="./images/icons.svg#icross"></use>
+                        </svg>
+                    </button>
+        
+                    <a class="header__logo" href="#">
+                        <img src="./images/logo.svg" alt="Логотип компании Immigrant.Today">
+                    </a>
+        
+                    <nav class="navbar">
+                        <ul class="navbar__catalogue">
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Иммиграция
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Учеба
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Работа
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Визы
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Услуги и курсы
+                                </a>
+                            </li>
+        
+                            <li class="nav__element">
+                                <a class="navbar__link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <button class="search-btn" type="button" aria-label="Поиск по сайту">
+        
+                            <svg class="search-btn__icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#magnifying"></use>
+                            </svg>
+                        </button>
+        
+                        <button class="auth-btn" type="button" aria-label="Авторизоваться на сайте">
+        
+                            <svg class="auth-btn__icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#user"></use>
+                            </svg>
+                        </button>
+        
+        
+                        <button class="header__btn">Оценить шансы</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="authorization">
+                <div class="container">
+                    <button class="back-btn" type="button" aria-label="Назад в меню">
+                        <svg class="back-btn__icon">
+                            <use href="./images/icons.svg#less-than"></use>
+                        </svg>
+                        Назад
+                    </button>
+                
+                    <form role="group" class="login">
+                        <h1 class="login__title">
+                            Войти в учетную запись
+                        </h1>
+                
+                        <label class="login__field">
+                            <input class="login__input" type="text" name="user_name" placeholder="Ваш e-mail">
+                        </label>
+                        <label class="login__field">
+                            <input class="login__input" type="password" name="password" placeholder="Пароль">
+                        </label>
+                
+                        <button class="enter-btn enter-btn--login" type="submit" aria-label="Войти в личный кабинет">
+                            Войти
+                        </button>
+                
+                        <a class="login__link" href="#">Забыли пароль?</a>
+                    </form>
+
+                    <div class="signup">
+                        <h2 class="signup__title">
+                            У вас нет учетной записи?
+                        </h2>
+<pre class="signup__text">
+Станьте членом сообщества, чтобы разблокировать
+функции, которые предназначены только для
+зарегестированных пользователей
+</pre>
+
+                        <button class="enter-btn enter-btn--signup" type="submit" aria-label="Зарегистрироваться на сайте">
+                            Зарегистрироваться
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__wraper">
+                    <a class="footer__logo" href="./index.html">
+                        <img src="./images/footer-logo.svg" alt="Логотип компании Immigrant.Today">
+                    </a>
+        
+                    <ul class="tabs tabs--bg-map">
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Иммиграция
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Учеба
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Работа
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Оценка шансов
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Тест английского
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="#">Тест французского
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <ul class="tabs">
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">О проекте
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Услуги и курсы
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Каталог бизнесов
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Вакансии
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Блог
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+        
+                        <li class="tabs__element">
+                            <a class="tabs__link" href="">Контакты
+                                <svg class="tabs__icon">
+                                    <use href="./images/icons.svg#greater-than-alt"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <div class="socials">
+                        <ul class="socials__list">
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Facebook">
+                                        <use href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Vkontakte">
+                                        <use href="./images/icons.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Instagram">
+                                        <use href="./images/icons.svg#instagram-alt"></use>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li class="socials__element">
+                                <a class="socials__link" href="#">
+                                    <svg class="socials__icon" aria-label="Telegram">
+                                        <use href="./images/icons.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <a class="socials__youtube" href="#">
+                            <svg class="socials__icon socials__icon--bigger" aria-label="Youtube">
+                                <use href="./images/icons.svg#youtube"></use>
+                            </svg>
+                            <span>YouTube</span>
+                            <div>
+                                999+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="address__wrapper">
+                <div class="copyright">
+                    <span class="copyright__heading">&#169;2015-2021 Imigrant.Today</span>
+                    <a class="copyright__link" href="#">Условия использования</a>
+                    <a class="copyright__link" href="#">Политика конфиденциальности</a>
+                </div>
+        
+                <address class="address">
+                    <a class="address__link" href="mailto:mail@immigrant.today">mail@immigrant.today</a>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
