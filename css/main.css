@@ -2700,12 +2700,23 @@ body {
 .signup__text {
   margin-bottom: 25px;
   text-align: center;
-  word-spacing: 1px;
+  word-spacing: -4px;
 }
 
 .enter-btn--signup {
   border: 1px solid #e55241;
   color: #e55241;
   background-color: #ffffff;
+}
+
+.create-account {
+  padding-top: 15px;
+  padding-bottom: 74px;
+}
+
+.checkbox.checkbox--create-account {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 /*# sourceMappingURL=main.css.map */
