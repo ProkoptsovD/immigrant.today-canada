@@ -88,11 +88,42 @@
                         </ul>
         
                         <button class="search-btn" type="button" aria-label="Поиск по сайту">
-        
                             <svg class="search-btn__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#magnifying"></use>
                             </svg>
                         </button>
+
+                        <div class="search-menu">
+                            <form class="search-menu__form">
+                                <label>
+                                    <input class="login__input login__input--search"
+                                           type="search"
+                                           list="keyword"
+                                           name="search"
+                                           placeholder="Введите поисковой запрос"
+                                           aria-label="Поиск контента по сайту">
+
+                                    <datalist id="keyword">
+                                        <option>Курсы</option>
+                                        <option>Консультация</option>
+                                        <option>Работа</option>
+                                        <option>Виза</option>
+                                        <option>Учеба</option>
+                                    </datalist> 
+
+                                    <button class="search-btn search-btn--mod" type="button" aria-label="Поиск по сайту">
+                                        <svg class="search-btn__icon search-btn__icon--mod" width="20px" height="20px">
+                                            <use href="./images/icons.svg#magnifying"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="search-btn search-btn--absolute" type="button" aria-label="Закрыть меню поиска">
+                                        <svg class="search-btn__icon" width="20px" height="20px">
+                                            <use href="./images/icons.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </label>
+                            </form>
+                        </div>
         
                         <button class="auth-btn" type="button" aria-label="Авторизоваться на сайте">
         
