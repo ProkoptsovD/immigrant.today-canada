@@ -2719,4 +2719,9 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+
+.restore-password {
+  padding-top: 15px;
+  padding-bottom: 70px;
+}
 /*# sourceMappingURL=main.css.map */
