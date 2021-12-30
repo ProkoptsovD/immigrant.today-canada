@@ -1,0 +1,78 @@
+.contacts {
+  padding-top: 40px;
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include font-preset(700, 22px, 30px);
+    color: getColor(headings);
+  }
+
+  &__strong {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: lineHeight(16px, 24px);
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+}
+
+.contacts__list-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  & > svg {
+    width: 7px;
+    height: 7px;
+
+    margin-right: 10px;
+
+    fill: getColor(accent);
+  }
+}
+
+.contacts__text-link {
+  display: inline-flex;
+  align-items: baseline;
+
+  color: getColor(accent);
+
+  & > svg {
+    display: inline-flex;
+    align-self: center;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 5px;
+
+    fill: getColor(accent);
+  }
+}
+
+//====================contacts qouestion section h2 making hidden==================//
+.contacts__questions {
+  padding-bottom: 70px;
+}
+
+.contacts__questions-heading {
+  @extend %visually-hidden;
+}
+
+//deletes margin
+.aside__card.no-margin,
+.aside__box.about-project__box.no-margin {
+  margin-top: 0;
+}
