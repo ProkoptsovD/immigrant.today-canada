@@ -7,13 +7,29 @@
   width: 100vw;
   height: 100vh;
 
-  background-color: wheat;
+  padding-top: 80px;
+
+  background-color: #ffffff;
+
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu.is-opened {
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.navbar.is-opened .search-btn,
+.navbar.is-opened .auth-btn {
+  display: none;
 }
 
 .dropdown-widget {
   position: relative;
 
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 
   &:not(:last-child) {
@@ -23,6 +39,11 @@
   &__wrapper {
     display: flex;
     align-items: center;
+
+    padding: 15px 18px;
+
+    border-top: 1px solid getColor(form-color);
+    border-bottom: 1px solid getColor(form-color);
   }
 
   &__icon {
@@ -33,15 +54,16 @@
 
     fill: currentColor;
 
-    .dropdown:hover &,
-    .dropdown-widget:focus & {
+    .dropdown-widget__btn:hover + &,
+    .dropdown-widget__btn:focus + &,
+    .dropdown-widget__btn:active + & {
       fill: getColor(accent);
     }
   }
 
   &__list {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 6px);
 
     width: 100%;
 
@@ -49,6 +71,16 @@
     box-shadow: 0px 5px 20px rgba(190, 190, 190, 0.25);
 
     background-color: getColor(bg-hero);
+
+    z-index: 2;
+    visibility: hidden;
+    pointer-events: none;
+
+    .dropdown-widget__btn.is-active ~ & {
+      visibility: visible;
+      pointer-events: initial;
+      z-index: 5;
+    }
   }
 
   &__list-item {
@@ -90,6 +122,9 @@
   padding: 0;
 
   font-family: inherit;
+  font-size: 16px;
+  line-height: lineHeight(16px, 24px);
+
   text-align: center;
 
   border: transparent;
@@ -121,4 +156,68 @@
 
 .dropdown-widget__btn.is-active .dropdown-widget__btn-icon {
   transform: rotateX(180deg);
+}
+
+//==================navbar positioning======================//
+.navbar.is-opened {
+  position: absolute;
+  top: calc(100% + 55px);
+  left: 0;
+
+  width: 100%;
+}
+
+.navbar__catalogue {
+  display: none;
+}
+
+.navbar.is-opened .navbar__catalogue {
+  display: block;
+  z-index: 2;
+}
+
+.navbar__element {
+  padding: 10px 18px;
+
+  border-bottom: 1px solid getColor(form-color);
+
+  &:first-child {
+    border-top: 1px solid getColor(form-color);
+  }
+}
+
+.navbar__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include font-preset(700, 18px, 24px);
+
+  color: getColor(headings);
+}
+
+.navbar__link-icon {
+  width: 16px;
+  height: 16px;
+
+  color: getColor(headings);
+}
+
+//===============header__btn styles==========================//
+.header__btn {
+  @extend %button;
+
+  padding: 15px 26.5px;
+  margin: 30px 0 50px 18px;
+
+  font-size: 14px;
+  line-height: lineHeight(14px, 20px);
+
+  z-index: 2;
+
+  display: none;
+}
+
+.navbar.is-opened .header__btn {
+  display: inline-block;
 }

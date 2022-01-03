@@ -326,7 +326,7 @@ textarea {
           justify-content: space-between;
 }
 
-.comments__btn, .more-details-btn, .card__btn, .aside__btn, .about__btn, .btn__signup, .service-card__btn {
+.comments__btn, .more-details-btn, .card__btn, .aside__btn, .about__btn, .btn__signup, .service-card__btn, .header__btn {
   display: inline-block;
   font-family: inherit;
   font-weight: 700;
@@ -815,16 +815,13 @@ body {
   padding-bottom: 20px;
 }
 
-.navbar__catalogue {
-  display: none;
-}
-
-.header__btn {
+.menu__list {
   display: none;
 }
 
 .menu-mobile-btn {
   background-color: #e55241;
+  z-index: 3;
 }
 
 .menu-mobile-btn__icon-menu {
@@ -2732,7 +2729,7 @@ body {
 .search-menu {
   position: absolute;
   top: 0;
-  right: -100%;
+  right: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2746,6 +2743,7 @@ body {
   height: 100%;
   padding: 20px 17px 20px 18px;
   background-color: #ffffff;
+  z-index: 5;
   -webkit-transition: -webkit-transform 350ms linear;
   transition: -webkit-transform 350ms linear;
   transition: transform 350ms linear;
@@ -2753,8 +2751,8 @@ body {
 }
 
 .search-menu.search-menu-opened {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .search-menu__form {
@@ -2807,7 +2805,20 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: wheat;
+  padding-top: 80px;
+  background-color: #ffffff;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu.is-opened {
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.navbar.is-opened .search-btn,
+.navbar.is-opened .auth-btn {
+  display: none;
 }
 
 .dropdown-widget {
@@ -2815,6 +2826,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2831,6 +2846,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px 18px;
+  border-top: 1px solid #dbdfec;
+  border-bottom: 1px solid #dbdfec;
 }
 
 .dropdown-widget__icon {
@@ -2840,19 +2858,29 @@ body {
   fill: currentColor;
 }
 
-.dropdown:hover .dropdown-widget__icon,
-.dropdown-widget:focus .dropdown-widget__icon {
+.dropdown-widget__btn:hover + .dropdown-widget__icon,
+.dropdown-widget__btn:focus + .dropdown-widget__icon,
+.dropdown-widget__btn:active + .dropdown-widget__icon {
   fill: #e55241;
 }
 
 .dropdown-widget__list {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 6px);
   width: 100%;
   border-radius: 4px 4px 0px 0px;
   -webkit-box-shadow: 0px 5px 20px rgba(190, 190, 190, 0.25);
           box-shadow: 0px 5px 20px rgba(190, 190, 190, 0.25);
   background-color: #f4f4f4;
+  z-index: 2;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown-widget__btn.is-active ~ .dropdown-widget__list {
+  visibility: visible;
+  pointer-events: initial;
+  z-index: 5;
 }
 
 .dropdown-widget__list-item {
@@ -2890,6 +2918,8 @@ body {
           align-items: center;
   padding: 0;
   font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   border: transparent;
   background-color: transparent;
@@ -2916,5 +2946,65 @@ body {
 .dropdown-widget__btn.is-active .dropdown-widget__btn-icon {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
+}
+
+.navbar.is-opened {
+  position: absolute;
+  top: calc(100% + 55px);
+  left: 0;
+  width: 100%;
+}
+
+.navbar__catalogue {
+  display: none;
+}
+
+.navbar.is-opened .navbar__catalogue {
+  display: block;
+  z-index: 2;
+}
+
+.navbar__element {
+  padding: 10px 18px;
+  border-bottom: 1px solid #dbdfec;
+}
+
+.navbar__element:first-child {
+  border-top: 1px solid #dbdfec;
+}
+
+.navbar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #1e222e;
+}
+
+.navbar__link-icon {
+  width: 16px;
+  height: 16px;
+  color: #1e222e;
+}
+
+.header__btn {
+  padding: 15px 26.5px;
+  margin: 30px 0 50px 18px;
+  font-size: 14px;
+  line-height: 1.42857;
+  z-index: 2;
+  display: none;
+}
+
+.navbar.is-opened .header__btn {
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */

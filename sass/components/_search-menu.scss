@@ -1,7 +1,7 @@
 .search-menu {
   position: absolute;
   top: 0;
-  right: -100%;
+  right: 100%;
 
   display: flex;
   justify-content: flex-end;
@@ -14,11 +14,13 @@
 
   background-color: #ffffff;
 
+  z-index: 5;
+
   transition: transform 350ms linear;
 }
 
 .search-menu.search-menu-opened {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 .search-menu__form {

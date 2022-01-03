@@ -30,9 +30,6 @@
                     
                     <div class="dropdown-widget__wrapper">
                         <div class="dropdown-widget">
-                            <svg class="dropdown-widget__icon">
-                                <use href="./images/icons.svg#clouds"></use>
-                            </svg>
                             <button class="dropdown-widget__btn" type="button">
                                 <span class="dropdown-widget__temperature">
                                     17<span>°C,&nbsp;</span>
@@ -44,6 +41,10 @@
                                     <use href="./images/icons.svg#arrow-down"></use>
                                 </svg>
                             </button>
+
+                            <svg class="dropdown-widget__icon">
+                                <use href="./images/icons.svg#clouds"></use>
+                            </svg>
 
                             <ul class="dropdown-widget__list">
                                 <li class="dropdown-widget__list-item">
@@ -67,9 +68,6 @@
                             </ul>
                         </div>
                         <div class="dropdown-widget">
-                            <svg class="dropdown-widget__icon">
-                                <use href="./images/icons.svg#global"></use>
-                            </svg>
                             <button class="dropdown-widget__btn" type="button">
                                 <span class="dropdown-widget__lang">
                                     Русский
@@ -78,6 +76,9 @@
                                     <use href="./images/icons.svg#arrow-down"></use>
                                 </svg>
                             </button>
+                            <svg class="dropdown-widget__icon">
+                                <use href="./images/icons.svg#global"></use>
+                            </svg>
 
                             <ul class="dropdown-widget__list" name="lang" id="lang">
                                 <li class="dropdown-widget__list-item">
@@ -140,39 +141,57 @@
         
                     <nav class="navbar">
                         <ul class="navbar__catalogue">
-                            <li class="nav__element">
+                            <li class="navbar__element">
                                 <a class="navbar__link" href="#">
                                     Иммиграция
+                                    <svg class="navbar__link-icon">
+                                        <use href="./images/icons.svg#arrow-down"></use>
+                                    </svg>
                                 </a>
                             </li>
         
-                            <li class="nav__element">
+                            <li class="navbar__element">
                                 <a class="navbar__link" href="#">
                                     Учеба
+                                    <svg class="navbar__link-icon">
+                                        <use href="./images/icons.svg#arrow-down"></use>
+                                    </svg>
                                 </a>
                             </li>
         
-                            <li class="nav__element">
+                            <li class="navbar__element">
                                 <a class="navbar__link" href="#">
                                     Работа
+                                    <svg class="navbar__link-icon">
+                                        <use href="./images/icons.svg#arrow-down"></use>
+                                    </svg>
                                 </a>
                             </li>
         
-                            <li class="nav__element">
+                            <li class="navbar__element">
                                 <a class="navbar__link" href="#">
                                     Визы
+                                    <svg class="navbar__link-icon">
+                                        <use href="./images/icons.svg#arrow-down"></use>
+                                    </svg>
                                 </a>
                             </li>
         
-                            <li class="nav__element">
+                            <li class="navbar__element">
                                 <a class="navbar__link" href="#">
                                     Услуги и курсы
+                                    <svg class="navbar__link-icon">
+                                        <use href="./images/icons.svg#arrow-down"></use>
+                                    </svg>
                                 </a>
                             </li>
         
-                            <li class="nav__element">
+                            <li class="navbar__element">
                                 <a class="navbar__link" href="#">
                                     Блог
+                                    <svg class="navbar__link-icon">
+                                        <use href="./images/icons.svg#arrow-down"></use>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
@@ -216,14 +235,15 @@
                         </div>
         
                         <button class="auth-btn" type="button" aria-label="Авторизоваться на сайте">
-        
                             <svg class="auth-btn__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#user"></use>
                             </svg>
                         </button>
         
         
-                        <button class="header__btn">Оценить шансы</button>
+                        <button class="header__btn" type="button" aria-label="Оценить шансы на иммиграцию">
+                            Оценить шансы
+                        </button>
                     </nav>
                 </div>
             </div>

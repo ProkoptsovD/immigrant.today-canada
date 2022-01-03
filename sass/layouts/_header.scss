@@ -16,17 +16,15 @@
   padding-bottom: 20px;
 }
 
-.navbar__catalogue {
-  display: none;
-}
-
-.header__btn {
+.menu__list {
   display: none;
 }
 //================mobile buttons styles======================//
 .menu-mobile-btn {
   @extend %button-mobile;
   background-color: getColor(accent);
+
+  z-index: 3;
 
   &__icon-menu {
     fill: #ffffff;
