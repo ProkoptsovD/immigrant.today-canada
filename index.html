@@ -27,12 +27,102 @@
                             <a class="header__link" href="#">Контакты</a>
                         </li>
                     </ul>
-        
-                    <ul class="menu__auth">
-                        <li class="menu__element">Погода</li>
-                        <li class="menu__element">Язык</li>
-                        <li class="menu__element">Мой аккаунт</li>
-                    </ul>
+                    
+                    <div class="dropdown-widget__wrapper">
+                        <div class="dropdown-widget">
+                            <svg class="dropdown-widget__icon">
+                                <use href="./images/icons.svg#clouds"></use>
+                            </svg>
+                            <button class="dropdown-widget__btn" type="button">
+                                <span class="dropdown-widget__temperature">
+                                    17<span>°C,&nbsp;</span>
+                                </span>
+                                <span class="dropdown-widget__city">
+                                    Торонто
+                                </span>
+                                <svg class="dropdown-widget__btn-icon">
+                                    <use href="./images/icons.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+
+                            <ul class="dropdown-widget__list">
+                                <li class="dropdown-widget__list-item">
+                                    Ванкувер
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    Калгари
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    Квебек-сити
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    Монреаль
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    Оттава
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    Торонто
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-widget">
+                            <svg class="dropdown-widget__icon">
+                                <use href="./images/icons.svg#global"></use>
+                            </svg>
+                            <button class="dropdown-widget__btn" type="button">
+                                <span class="dropdown-widget__lang">
+                                    Русский
+                                </span>
+                                <svg class="dropdown-widget__btn-icon">
+                                    <use href="./images/icons.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+
+                            <ul class="dropdown-widget__list" name="lang" id="lang">
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        English
+                                    </a>
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        Español
+                                    </a>
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        Français
+                                    </a>
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        Italiano
+                                    </a>
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        Polszczyzna
+                                    </a>
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        Português
+                                    </a>
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        Русский
+                                    </a>
+                                </li>
+                                <li class="dropdown-widget__list-item">
+                                    <a class="dropdown-widget__link" href="#">
+                                        Українська
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
         
                 <div class="header__mobile">
@@ -40,10 +130,10 @@
                         <svg class="menu-mobile-btn__icons" width="32px" height="32px">
         
                             <use class="menu-mobile-btn__icon-menu" href="./images/icons.svg#mobile-menu"></use>
-                            <use class="menu-mobile-btn__icon-cross" href="./images/icons.svg#icross"></use>
+                            <use class="menu-mobile-btn__icon-cross" href="./images/icons.svg#cross"></use>
                         </svg>
                     </button>
-        
+
                     <a class="header__logo" href="#">
                         <img src="./images/logo.svg" alt="Логотип компании Immigrant.Today">
                     </a>
