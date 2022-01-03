@@ -233,13 +233,53 @@
                                 </label>
                             </form>
                         </div>
+
+                        <div class="account">
+                            <div class="account__wrapper">
+                                <svg class="auth-btn__icon" width="24px" height="24px">
+                                    <use class="auth-btn__icon-user" href="./images/icons.svg#user"></use>
+                                </svg>
+                                
+                                <h2 class="account__title">
+                                    Мой аккаунт
+                                </h2>
+                            </div>
+
+                            <ul class="account__tabs">
+                                <li class="account__tabs-item">
+                                    <a class="account__tabs-link" href="#">
+                                        Профиль
+                                    </a>
+                                </li>
+                                <li class="account__tabs-item">
+                                    <a class="account__tabs-link" href="#">
+                                        Курсы
+                                    </a>
+                                </li>
+                                <li class="account__tabs-item">
+                                    <a class="account__tabs-link" href="#">
+                                        Монеты
+                                    </a>
+                                </li>
+                                <li class="account__tabs-item">
+                                    <a class="account__tabs-link" href="#">
+                                        Уведомления
+                                    </a>
+                                </li>
+                                <li class="account__tabs-item">
+                                    <button class="account__loggout-btn" type="button" aria-label="Выйти из аккаунта">
+                                        Выйти
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
         
                         <button class="auth-btn" type="button" aria-label="Авторизоваться на сайте">
                             <svg class="auth-btn__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#user"></use>
+                                <use class="auth-btn__icon-user" href="./images/icons.svg#user"></use>
+                                <use class="auth-btn__icon-cross" href="./images/icons.svg#cross"></use>
                             </svg>
                         </button>
-        
         
                         <button class="header__btn" type="button" aria-label="Оценить шансы на иммиграцию">
                             Оценить шансы
