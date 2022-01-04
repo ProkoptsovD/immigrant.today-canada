@@ -14,11 +14,12 @@
 
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 15px 0;
+  }
 }
 
-.menu__list {
-  display: none;
-}
 //================mobile buttons styles======================//
 .menu-mobile-btn {
   @extend %button-mobile;
@@ -38,6 +39,10 @@
       display: block;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .menu-mobile-btn.is-opened .menu-mobile-btn__icon-menu {
@@ -55,6 +60,14 @@
   &:not(:last-child) {
     margin-right: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 44px;
+    height: 44px;
+
+    margin-right: 15px;
+    margin-left: 40px;
+  }
 }
 
 .auth-btn {
@@ -63,5 +76,42 @@
 
   &__icon {
     fill: getColor(accent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+//===============header__btn styles==========================//
+.header__btn {
+  @extend %button;
+
+  @media screen and (max-width: 1199px) {
+    padding: 15px 26.5px;
+
+    font-size: 14px;
+    line-height: lineHeight(14px, 20px);
+
+    display: none;
+    margin: 30px 0 50px 18px;
+
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 16px;
+
+    @include font-preset(700, 16px, 24px);
+
+    border: 1px solid getColor(accent);
+
+    background-color: transparent;
+    color: getColor(accent);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar.is-opened .header__btn {
+    display: inline-block;
   }
 }

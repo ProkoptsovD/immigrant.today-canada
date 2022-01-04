@@ -1,23 +1,54 @@
 //==========================mobile menu styles when opened====================//
-.menu {
-  position: absolute;
-  top: 0;
-  left: 0;
+@media screen and (max-width: 1199px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
-  padding-top: 80px;
+    padding-top: 80px;
 
-  background-color: #ffffff;
+    background-color: #ffffff;
 
-  visibility: hidden;
-  pointer-events: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .menu.is-opened {
   visibility: visible;
   pointer-events: initial;
+}
+//============================desktop posisitions================//
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0;
+
+    @media screen and (max-width: 1199px) {
+      &__list {
+        display: none;
+      }
+    }
+    &__list {
+      display: flex;
+    }
+
+    &__element:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .header__link {
+      font-size: 16px;
+      line-height: lineHeight(16px, 24px);
+
+      color: getColor(text-main);
+    }
+  }
 }
 
 .navbar.is-opened .search-btn,
@@ -32,6 +63,10 @@
   flex-direction: row-reverse;
   align-items: center;
 
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-end;
+  }
+
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -40,10 +75,12 @@
     display: flex;
     align-items: center;
 
-    padding: 15px 18px;
+    @media screen and (max-width: 1199px) {
+      padding: 15px 18px;
 
-    border-top: 1px solid getColor(form-color);
-    border-bottom: 1px solid getColor(form-color);
+      border-top: 1px solid getColor(form-color);
+      border-bottom: 1px solid getColor(form-color);
+    }
   }
 
   &__icon {
@@ -159,16 +196,29 @@
 }
 
 //==================navbar positioning======================//
-.navbar.is-opened {
-  position: absolute;
-  top: calc(100% + 55px);
-  left: 0;
+@media screen and (max-width: 1199px) {
+  .navbar.is-opened {
+    position: absolute;
+    top: calc(100% + 55px);
+    left: 0;
 
-  width: 100%;
+    width: 100%;
+  }
 }
 
-.navbar__catalogue {
-  display: none;
+@media screen and (min-width: 1200px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+
+    &__catalogue {
+      display: flex;
+
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
+    }
+  }
 }
 
 .navbar.is-opened .navbar__catalogue {
@@ -176,24 +226,34 @@
   z-index: 2;
 }
 
-.navbar__element {
-  padding: 10px 18px;
+@media screen and (max-width: 1199px) {
+  .navbar__element {
+    padding: 10px 18px;
 
-  border-bottom: 1px solid getColor(form-color);
+    border-bottom: 1px solid getColor(form-color);
 
-  &:first-child {
-    border-top: 1px solid getColor(form-color);
+    &:first-child {
+      border-top: 1px solid getColor(form-color);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar__element:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 .navbar__link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   @include font-preset(700, 18px, 24px);
 
   color: getColor(headings);
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .navbar__link-icon {
@@ -201,23 +261,8 @@
   height: 16px;
 
   color: getColor(headings);
-}
 
-//===============header__btn styles==========================//
-.header__btn {
-  @extend %button;
-
-  padding: 15px 26.5px;
-  margin: 30px 0 50px 18px;
-
-  font-size: 14px;
-  line-height: lineHeight(14px, 20px);
-
-  z-index: 2;
-
-  display: none;
-}
-
-.navbar.is-opened .header__btn {
-  display: inline-block;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }

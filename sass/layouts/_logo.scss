@@ -1,4 +1,6 @@
-// .header__logo > img {
-//   width: 133px;
-//   height: 80px;
-// }
+@media screen and (min-width: 1200px) {
+  .header__logo > img {
+    width: 278px;
+    height: 86px;
+  }
+}
