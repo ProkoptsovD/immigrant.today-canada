@@ -151,6 +151,13 @@
   }
 }
 
+//hides mobile account button
+@media screen and (max-width: 1199px) {
+  .dropdown-widget.dropdown-widget--hidden {
+    display: none;
+  }
+}
+
 //===================button styles===================//
 .dropdown-widget__btn {
   display: inline-flex;
@@ -213,11 +220,13 @@
 
     &__catalogue {
       display: flex;
-
-      @media screen and (max-width: 1199px) {
-        display: none;
-      }
     }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar__catalogue {
+    display: none;
   }
 }
 

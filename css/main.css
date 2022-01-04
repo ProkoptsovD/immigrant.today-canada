@@ -919,8 +919,39 @@ body {
   background-color: #f4f4f4;
 }
 
-.hero__container {
-  padding-top: 30px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 750px;
+    background-image: url("../images/rhombus.svg"), url("../images/hero-img-desktop@1x.png"), url("../images/hero-rectangle.svg");
+    background-size: 33px 33px, auto, contain;
+    background-position: right 50px top 218px, bottom 0 right 0, bottom -1px right -300px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/rhombus.svg"), url("../images/hero-img-desktop@2x.png"), url("../images/hero-rectangle.svg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero .hero__bg {
+    background-image: url("../images/rhombus.svg"), url("../images/hero-img-desktop@2x.png"), url("../images/hero-rectangle.svg");
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__container {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-top: 140px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__heading {
@@ -931,18 +962,42 @@ body {
   color: #1e222e;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__heading {
+    margin-bottom: 35px;
+    font-size: 48px;
+    line-height: 1.33333;
+  }
+}
+
 .hero__pros-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__pros-item {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
 .hero__pros-item:last-child {
   margin-bottom: 35px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__pros-item:last-child {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__pros-item::before {
@@ -952,6 +1007,16 @@ body {
   height: 24px;
   margin-right: 10px;
   background-image: url("../images/maple-leaf.svg");
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__pros-item::before {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .offer__wrapper {
@@ -965,9 +1030,17 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 1199px) {
   .more-details-btn {
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .more-details-btn {
+    margin-right: 15px;
+    padding-right: 47px;
+    padding-left: 47px;
   }
 }
 
@@ -975,15 +1048,24 @@ body {
   margin-left: auto;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 1199px) {
   .ask-question-btn {
     margin-left: 0;
     margin-right: auto;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .ask-question-btn {
+    margin-left: 0;
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+}
+
 .ask-question-btn,
 .more-details-btn {
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.42857;
 }
@@ -1003,7 +1085,7 @@ body {
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 1199px) {
   .ask-question-btn,
   .more-details-btn {
     display: inline-block;
@@ -1013,13 +1095,42 @@ body {
   }
 }
 
-.hero__bg {
-  width: 100%;
-  min-height: 312px;
-  background-image: url("../images/hero-rectangle-dotted.svg"), url("../images/hero-img.png"), url("../images/hero-rectangle.svg");
-  background-size: 62px 31px, contain, contain;
-  background-position: right 0 top 113px, bottom 0 right 32px, bottom 0 right 0;
-  background-repeat: no-repeat;
+@media screen and (min-width: 1200px) {
+  .ask-question-btn,
+  .more-details-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__bg {
+    width: 100%;
+    min-height: 312px;
+    background-image: url("../images/hero-rectangle-dotted.svg"), url("../images/hero-img@1x.png"), url("../images/hero-rectangle.svg");
+    background-size: 62px 31px, contain, contain;
+    background-position: right 0 top 113px, bottom 0 right 32px, bottom 0 right 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero__bg .hero__bg {
+    background-image: url("../images/hero-rectangle-dotted.svg"), url("../images/hero-img@2x.png"), url("../images/hero-rectangle.svg");
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 3), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 1199px) and (min-resolution: 288dpi), screen and (max-width: 1199px) and (min-resolution: 3dppx) {
+  .hero__bg .hero__bg {
+    background-image: url("../images/hero-rectangle-dotted.svg"), url("../images/hero-img@2x.png"), url("../images/hero-rectangle.svg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__bg {
+    display: none;
+  }
 }
 
 .popular {
@@ -3012,6 +3123,12 @@ body {
   color: #e55241;
 }
 
+@media screen and (max-width: 1199px) {
+  .dropdown-widget.dropdown-widget--hidden {
+    display: none;
+  }
+}
+
 .dropdown-widget__btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3076,7 +3193,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .navbar__catalogue {
     display: none;
   }
